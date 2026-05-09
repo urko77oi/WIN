@@ -75,6 +75,8 @@ def _modelo_para_agente(agente: str) -> str:
     # Compatibilidad: si Scout no está en defaults, usa el del Researcher.
     if agente == "scout" and "researcher" in defaults:
         return defaults["researcher"]
+    if agente == "domenech" and "builder" in defaults:
+        return defaults["builder"]
     return "haiku-4-5"
 
 
@@ -150,20 +152,46 @@ def _generar_mock(*, agente: str, system_prompt: str, mensaje_usuario: str) -> s
             Investigación simulada sobre: «{mensaje_usuario.strip()[:120]}».
         """).strip(),
 
-        "builder": textwrap.dedent(f"""
-            [MOCK · {semilla}] Propuesta del Builder para: «{mensaje_usuario.strip()[:120]}».
+        "domenech": textwrap.dedent(f"""
+            [MOCK · {semilla}] Propuesta de Domenech (Builder).
 
-            Estructura propuesta:
+            ## ADR de stack
+            - Frontend: **Astro** (mejor Lighthouse out-of-the-box, contenido mayoritariamente estático).
+            - Hosting: **Cloudflare Pages** (free tier, edge global).
+            - Email: **Resend** (form de captura).
+            - Pagos: ninguno en este hito.
+            - Justificación: minimiza JS, coste 0/mes, deploy en minutos.
+
+            ## Estructura propuesta
             - Hero con headline directo + sub-headline + CTA.
             - 3 bloques de beneficios con iconos.
-            - Sección de prueba social (testimonios o logos).
+            - Sección de prueba social.
             - FAQ corta (3-5 preguntas).
             - CTA final.
+            - Páginas legales mínimas (privacidad, términos).
 
-            Stack: HTML + CSS + Tailwind (sin JS innecesario).
-            Hosting recomendado: Cloudflare Pages (gratis).
+            ## Hitos (Playbook 1 abreviado)
+            - Hito 1 — Identidad (60 min, ~0,30€): moodboard + tokens.
+            - Hito 2 — Build (180 min, ~0,40€): Astro + Tailwind + form Resend.
+            - Hito 3 — Verificación (30 min, ~0,05€): Lighthouse mobile ≥ 90.
+            - Hito 4 — Aprobación de publicación (humano).
+            - Hito 5 — Producción + uptime monitor.
+            - Hito 6 — Handoff (build report).
 
-            Listo para crear archivos cuando me des luz verde.
+            ## Riesgos
+            - Dominio: el founder debe comprarlo (no lo hago yo).
+            - Form Resend: requiere DNS verificado.
+
+            ## Decisiones que necesitan OK del founder
+            - Confirmar nombre del proyecto y dominio.
+            - Aprobación de publicación (Hito 4).
+
+            (Respuesta simulada en modo mock. En modo real ejecuto el Playbook 1
+            completo según `agents/domenech/playbook.md`.)
+        """).strip(),
+
+        "builder": textwrap.dedent(f"""
+            [MOCK · {semilla}] (Builder placeholder deprecado — usar Domenech.)
         """).strip(),
     }
 

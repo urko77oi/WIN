@@ -5,6 +5,42 @@ Formato libre, por fases. La fase activa va arriba.
 
 ---
 
+## [0.0.3] — 2026-05-09 — Integración de Domenech (Builder)
+
+### Cambiado
+- **Builder placeholder reemplazado por Domenech.** El founder entregó un
+  diseño completo (9 archivos `.md`: identity, system_prompt, skills,
+  playbook, heartbeat, guardrails, memory, interfaces, output_templates).
+  Encaja con la filosofía de Durruti, así que se adopta tal cual y se
+  deprecia el Builder mock.
+- `agents/builder/` eliminado.
+- `agents/domenech/` creado con los 9 `.md` originales del founder +
+  `INTEGRATION.md` que documenta las adaptaciones.
+- `Durruti` ahora delega construcción de landings y generación de
+  contenido en `Domenech`.
+- Mock de Domenech en `shared/llm_client.py` devuelve la estructura
+  canónica (ADR de stack + estructura + hitos + riesgos + decisiones
+  pendientes del founder).
+- `config/models.yaml`: `builder → domenech` en defaults.
+
+### Convenciones de nombres
+- **Domenech** = nombre propio del agente.
+- **Builder** = rol técnico. Los contratos JSON entre agentes
+  (`BuildOrder`, `BuildPlan`, `MilestoneReport`, `Blocker`, `BuildReport`,
+  `ScoutFeedback`, `OperatorHandoff`, `BuilderEvent`) **conservan el
+  nombre técnico** porque son interfaces estables.
+
+### Adaptaciones explícitas vs. el diseño original (en INTEGRATION.md)
+- Domenech reporta a **Durruti**, no al humano.
+- Outputs en `.md` (Fase 0); `.docx` (build report final) para Fase 1+.
+- Catálogo completo de skills (web.astro, saas.kit_basic, pay.stripe,
+  etc.), modos del heartbeat, modo agresivo ante bloqueo y contratos
+  JSON: Fase 1+.
+- Comandos `builder status / approve / pause / mode promote` no se
+  implementan como CLI separada. Domenech se invoca a través de Durruti.
+
+---
+
 ## [0.0.2] — 2026-05-09 — Integración del agente Scout
 
 ### Cambiado
@@ -52,7 +88,7 @@ Documentadas en `agents/scout/INTEGRATION.md`. Resumen:
   - **Durruti** (CEO Operativo): identidad, prompt, playbook,
     catálogo de órdenes, clase Python.
   - **Researcher**: identidad, prompt, skills, clase Python.
-  - **Builder**: identidad, prompt, skills, clase Python.
+  - **Builder** (placeholder, después reemplazado por Domenech en v0.0.3).
 - Scripts del usuario: `start.py`, `status.py`, `doctor.py`, `approve.py`.
 - Documentación: `README.md`, `PROJECT_BRIEF.md` (fuente de verdad),
   `DOCTOR.md`, `HOW_TO_USE.md`, `HOW_TO_GIVE_ORDERS.md`.

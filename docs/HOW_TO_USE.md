@@ -61,7 +61,7 @@ En Fase 0 normalmente no hay pendientes (Durruti pregunta en el momento).
 ## Cómo Durruti decide
 
 1. Lees su orden → la clasifica → delega en el especialista adecuado
-   (Scout o Builder).
+   (Scout o Domenech).
 2. El especialista hace su parte.
 3. Durruti consolida y te lo cuenta.
 4. Si hay que aprobar algo (publicar, gastar dinero), te lo pregunta antes.

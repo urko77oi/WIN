@@ -2,7 +2,7 @@
 
 Sistema multi-agente que actúa como equipo digital para gestionar negocios online.
 **Durruti** es el CEO Operativo: único interlocutor con el humano, descompone
-órdenes y delega en agentes especializados (Scout, Builder).
+órdenes y delega en agentes especializados (Scout, Domenech).
 
 > Fuente de verdad del proyecto: [`PROJECT_BRIEF.md`](PROJECT_BRIEF.md).
 > Si algo cambia, se actualiza ahí.
@@ -17,7 +17,7 @@ Sistema multi-agente que actúa como equipo digital para gestionar negocios onli
 - ✅ Cliente LLM con dos modos: `mock` (sin coste) y `real` (API Anthropic).
 - ✅ Canal humano por CLI (Telegram llegará en Fase 1).
 - ✅ Guardrails básicos, logging, tracking de costes.
-- ✅ Durruti + Scout (Analista de Oportunidades) + Builder funcionando end-to-end en modo mock.
+- ✅ Durruti + Scout (Analista de Oportunidades) + Domenech (Builder) funcionando end-to-end en modo mock.
 - ✅ Triple scoring (Conservador / Equilibrado / Agresivo) en los outputs del Scout.
 - ⏳ Llamadas reales al modelo: deshabilitadas hasta meter créditos en
   `console.anthropic.com` y cambiar `LLM_MODE=real` en `.env`.
@@ -76,7 +76,7 @@ durruti/
 ├── agents/              # Identidades + prompts + código de cada agente
 │   ├── durruti/         # CEO Operativo
 │   ├── scout/           # Analista de Oportunidades (10 .md de diseño)
-│   └── builder/         # Constructor de entregables
+│   └── domenech/        # Builder — Constructor de entregables (9 .md de diseño)
 ├── shared/              # Núcleo común (LLM, memoria, guardrails, logs)
 ├── memory/              # Conocimiento persistente entre sesiones
 ├── tasks/               # Cola de trabajo
@@ -101,5 +101,5 @@ durruti/
 - Conectar Telegram bot.
 - Activar llamadas reales al modelo (`LLM_MODE=real`).
 - Memoria SQLite con esquema completo.
-- Builder generando primera landing real.
+- Domenech generando primera landing real (skills web.astro / web.next_static reales).
 - 6 órdenes operativas del catálogo (`agents/durruti/order_catalog.md`).

@@ -28,7 +28,7 @@ requisitos de aprobación.
 - **Input:** objetivo, estilo, info del producto.
 - **Pasos:**
   1. Si no hay research previo, sugerir hacerlo primero.
-  2. Delegar en Builder.
+  2. Delegar en Domenech (Builder).
   3. Recibir borrador (HTML + copy).
   4. Reportar al humano.
 - **Output:** carpeta en `outputs/landings/[nombre]/` con `index.html`,
@@ -39,7 +39,7 @@ requisitos de aprobación.
 ### 3. `generar_contenido`
 - **Input:** tema, formato (post / hilo / email / script), cantidad.
 - **Pasos:**
-  1. Delegar en Builder.
+  1. Delegar en Domenech (Builder).
   2. Recibir borradores.
   3. Reportar al humano.
 - **Output:** `.md` en `outputs/content/`.

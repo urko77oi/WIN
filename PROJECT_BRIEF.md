@@ -73,11 +73,11 @@ Elegido: **Durruti + 3-5 especialistas**. Pros: separación clara, escalable, co
 
 - **Durruti (CEO Operativo)** — único punto de contacto con el humano. Recibe la orden, la descompone, decide qué especialista la ejecuta, supervisa, pide aprobaciones, y entrega el resultado consolidado. Tiene memoria de todos los proyectos activos y prioridades.
 - **Scout** — Analista de Oportunidades. Investigación multifuente, triple scoring (Conservador/Equilibrado/Agresivo), bandera de confianza obligatoria, challenge crítico al briefing. Identidad y playbook completos en `agents/scout/*.md`.
-- **Builder** — crea cosas: webs (HTML/Astro), código de automatizaciones, contenido (posts, emails, copy), procesos.
+- **Domenech** (rol técnico: Builder) — Constructor del sistema. Toma oportunidades validadas y las convierte en activos digitales reales: landings, blogs, e-commerce, SaaS micro, automatizaciones. Calidad de día 1, modo agresivo ante bloqueos, barato por defecto. Identidad y playbooks completos en `agents/domenech/*.md`.
 - **Operator** (Fase 2) — mantiene cosas vivas: responde WhatsApp, publica en redes, envía emails, day-to-day.
 - **Auditor** (Fase 3) — revisa la calidad antes de entregar al usuario.
 
-### Por qué Fase 1 = Durruti + Scout + Builder
+### Por qué Fase 1 = Durruti + Scout + Domenech (Builder)
 
 Operator necesita integraciones externas (WhatsApp, redes) con riesgo y curva de aprendizaje. Conviene postergar hasta tener algo que operar.
 
@@ -244,11 +244,11 @@ Ver `DOCTOR.md` para el protocolo completo.
 2. Genera tarea para Scout.
 3. Scout ejecuta, sintetiza informe.
 4. Durruti recibe hallazgos.
-5. Genera tarea para Builder.
-6. Builder devuelve propuesta.
+5. Genera tarea para Domenech (Builder).
+6. Domenech devuelve propuesta con ADR de stack.
 7. Durruti consolida y notifica al usuario, pide aprobación si toca.
 8. Usuario aprueba.
-9. Builder crea archivos en `outputs/landings/curso-[tema]/`.
+9. Domenech crea archivos en `outputs/landings/curso-[tema]/`.
 10. Durruti reporta.
 
 Cada paso queda en logs y en `memory/projects/`.
@@ -273,7 +273,7 @@ Sandbox sin créditos API. Estructura, agentes, scripts, CLI funcionando end-to-
 - Telegram conectado.
 - LLM real activado.
 - SQLite con tablas operativas.
-- Builder genera primera landing real.
+- Domenech genera primera landing real.
 - 6 órdenes del catálogo.
 
 ### Fase 2 — Operator y mundo real (semanas 3-6)

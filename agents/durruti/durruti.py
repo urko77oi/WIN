@@ -1,7 +1,7 @@
 """Implementación de Durruti, el CEO Operativo.
 
 Único interlocutor con el humano. Recibe órdenes, las clasifica, delega en
-Researcher o Builder, supervisa, pide aprobaciones y reporta.
+Scout o Domenech, supervisa, pide aprobaciones y reporta.
 
 En Fase 0 esta clase orquesta el flujo end-to-end con respuestas mock.
 En Fase 1+ se ampliará con: telegram, parsing de órdenes más rico,
@@ -12,7 +12,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
 
-from agents.builder.builder import Builder
+from agents.domenech.domenech import Domenech
 from agents.scout.scout import Scout
 from shared import llm_client, memory
 from shared.human_channel import HumanChannel, canal_por_defecto
@@ -65,7 +65,7 @@ class Durruti:
         self.canal = canal or canal_por_defecto()
         self.system_prompt = _cargar_system_prompt()
         self.scout = Scout()
-        self.builder = Builder()
+        self.domenech = Domenech()
         log.info("Durruti listo. Canal: " + self.canal.__class__.__name__)
 
     # ─────────────────────────────────────────────────────────────────
@@ -162,24 +162,24 @@ class Durruti:
             nombre=f"Landing: {orden[:60]}",
             descripcion=orden,
         )
-        memory.anotar_en_bitacora(proyecto.slug, "Durruti delega creación de landing en Builder.")
-        propuesta = self.builder.proponer_landing(orden)
-        memory.anotar_en_bitacora(proyecto.slug, "Builder entrega propuesta de landing.")
+        memory.anotar_en_bitacora(proyecto.slug, "Durruti delega creación de landing en Domenech (Builder).")
+        propuesta = self.domenech.proponer_landing(orden)
+        memory.anotar_en_bitacora(proyecto.slug, "Domenech entrega propuesta de landing con ADR de stack.")
 
         texto = self._llamar_consolidacion(
             orden=orden,
             entrega_de_especialista=propuesta,
-            tipo_entrega="propuesta de landing del Builder",
+            tipo_entrega="propuesta de landing de Domenech (con ADR de stack)",
         )
         self.canal.notificar(texto)
         return Resultado(texto_para_humano=texto, proyecto_slug=proyecto.slug)
 
     def _handle_generar_contenido(self, orden: str) -> Resultado:
-        propuesta = self.builder.generar_contenido(orden)
+        propuesta = self.domenech.generar_contenido(orden)
         texto = self._llamar_consolidacion(
             orden=orden,
             entrega_de_especialista=propuesta,
-            tipo_entrega="contenido generado por Builder",
+            tipo_entrega="contenido generado por Domenech",
         )
         self.canal.notificar(texto)
         return Resultado(texto_para_humano=texto)

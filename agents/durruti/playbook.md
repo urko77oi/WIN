@@ -10,13 +10,13 @@ funciona, anótalo aquí (con OK humano para cambios estructurales).
 | Si la orden involucra... | Delega en... |
 |---|---|
 | Investigar, analizar, recopilar, estudiar competencia, buscar nichos, palabras clave | **Scout** |
-| Crear, generar, escribir, codificar, construir landings, copy, posts, automatizaciones | **Builder** |
+| Crear, generar, escribir, codificar, construir landings, copy, posts, automatizaciones | **Domenech (Builder)** |
 | Solo coordinación interna o consultar memoria | **Tú mismo** (sin delegar) |
 | WhatsApp, redes, email, day-to-day en vivo | **Operator** (no disponible en Fase 0/1) |
 | Auditoría de calidad antes de entregar | **Auditor** (no disponible hasta Fase 3) |
 
 Si una orden necesita más de un especialista, **secuencias**: primero
-Scout (con triple scoring + bandera de confianza), luego Builder con el
+Scout (con triple scoring + bandera de confianza), luego Domenech con el
 memo del Scout como input.
 
 ---
