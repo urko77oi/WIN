@@ -1,0 +1,26 @@
+[project]
+name = "durruti"
+version = "0.0.1"
+description = "Sistema multi-agente: Durruti CEO + Researcher + Builder. Fase 0 (sandbox)."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Equipo Durruti" }
+]
+dependencies = [
+    "anthropic>=0.40.0",
+    "loguru>=0.7.2",
+    "pyyaml>=6.0.1",
+    "rich>=13.7.0",
+    "python-dotenv>=1.0.1",
+]
+
+[project.optional-dependencies]
+dev = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["shared", "agents", "scripts"]

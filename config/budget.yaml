@@ -1,0 +1,38 @@
+# Política de gasto y de aprobación humana.
+# Editable. Si una llamada supera el límite duro, el sistema PAUSA.
+
+limites:
+  diario_eur: 5.0
+  mensual_eur: 50.0
+
+# Acción al superar el límite duro: pausar | avisar | bloquear_irreversibles
+accion_al_superar: pausar
+
+# Categorías de acción que SIEMPRE requieren OK humano explícito.
+aprobacion_humana_obligatoria_si:
+  - implica_pago
+  - es_irreversible
+  - es_publicacion_publica
+  - envia_email_masivo
+  - modifica_produccion
+  - elimina_archivos
+  - ejecuta_comando_shell
+
+# Precios orientativos en euros por millón de tokens (revisar cada cierto tiempo).
+# Se usan para estimar el coste de cada llamada.
+modelos_precios_eur_por_millon_tokens:
+  haiku-4-5:
+    input: 1.0
+    output: 5.0
+  sonnet-4-6:
+    input: 3.0
+    output: 15.0
+  opus-4-7:
+    input: 15.0
+    output: 75.0
+  mock:
+    input: 0.0
+    output: 0.0
+  mock-haiku:
+    input: 0.0
+    output: 0.0

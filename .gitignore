@@ -1,0 +1,45 @@
+# Secretos: jamás en git
+.env
+.env.*
+!.env.example
+secrets/.env
+secrets/*.key
+secrets/*.pem
+secrets/backup_*.enc
+
+# Estado local
+memory/db.sqlite
+memory/db.sqlite-*
+memory/research_cache/
+
+# Logs
+logs/*.log
+logs/doctor-*.md
+
+# Salidas generadas (no las versionamos hasta que lo decidamos por proyecto)
+outputs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Entornos
+.venv/
+.uv/
+venv/
+.python-version
+
+# Editores / SO
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

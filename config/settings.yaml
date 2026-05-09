@@ -1,0 +1,36 @@
+# Configuración general del sistema Durruti.
+# Editable. Cualquier cosa que estés a punto de hardcodear va aquí.
+
+sistema:
+  nombre: Durruti
+  fase: 0
+  idioma: es
+
+llm:
+  # Modo por defecto si .env no define LLM_MODE.
+  mode_default: mock
+  # Caché de prompts (Anthropic). Activado por defecto cuando estemos en real.
+  cache_prompts: true
+  # Timeout de cada llamada al modelo en segundos.
+  timeout_segundos: 60
+
+memoria:
+  projects_dir: memory/projects
+  learnings_dir: memory/learnings
+  playbooks_dir: memory/playbooks
+  db_path: memory/db.sqlite
+
+logging:
+  dir: logs
+  retention_days: 30
+  level_default: INFO
+  rotation: "1 day"
+
+tareas:
+  pending_dir: tasks/pending
+
+# Comportamiento del bucle principal
+runtime:
+  # Si una tarea queda esperando aprobación humana más de N minutos,
+  # Durruti deja de bloquearse en ella y trabaja en otras pendientes.
+  espera_aprobacion_max_min: 30

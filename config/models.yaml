@@ -1,0 +1,19 @@
+# Routing de modelos por agente y por tipo de tarea.
+# Editable. Esta tabla decide qué modelo usa cada agente.
+
+# Modelos por defecto si no hay regla específica.
+defaults:
+  durruti: haiku-4-5      # despachador, debe ser barato y rápido
+  researcher: sonnet-4-6  # síntesis y análisis, calidad media-alta
+  builder: sonnet-4-6     # genera contenido y código
+
+# Reglas de escalado. Se evalúan en orden; la primera que aplica gana.
+escalado:
+  - cuando: "tarea.tipo == 'status'"
+    usar: haiku-4-5
+  - cuando: "tarea.complejidad == 'alta'"
+    usar: opus-4-7
+
+# Modelo simulado en modo mock.
+modo_mock:
+  modelo_simulado: mock-haiku
