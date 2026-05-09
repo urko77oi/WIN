@@ -2,7 +2,7 @@
 
 Sistema multi-agente que actúa como equipo digital para gestionar negocios online.
 **Durruti** es el CEO Operativo: único interlocutor con el humano, descompone
-órdenes y delega en agentes especializados (Researcher, Builder).
+órdenes y delega en agentes especializados (Scout, Builder).
 
 > Fuente de verdad del proyecto: [`PROJECT_BRIEF.md`](PROJECT_BRIEF.md).
 > Si algo cambia, se actualiza ahí.
@@ -17,7 +17,8 @@ Sistema multi-agente que actúa como equipo digital para gestionar negocios onli
 - ✅ Cliente LLM con dos modos: `mock` (sin coste) y `real` (API Anthropic).
 - ✅ Canal humano por CLI (Telegram llegará en Fase 1).
 - ✅ Guardrails básicos, logging, tracking de costes.
-- ✅ Durruti + Researcher + Builder funcionando end-to-end en modo mock.
+- ✅ Durruti + Scout (Analista de Oportunidades) + Builder funcionando end-to-end en modo mock.
+- ✅ Triple scoring (Conservador / Equilibrado / Agresivo) en los outputs del Scout.
 - ⏳ Llamadas reales al modelo: deshabilitadas hasta meter créditos en
   `console.anthropic.com` y cambiar `LLM_MODE=real` en `.env`.
 
@@ -47,7 +48,7 @@ Aparecerá el prompt CLI de Durruti. Escribe una orden en español, por ejemplo:
 > investiga el nicho cursos yoga online
 ```
 
-Durruti la descompondrá, delegará en Researcher, y devolverá un informe.
+Durruti la descompondrá, delegará en Scout, y devolverá un informe.
 En modo `mock` la respuesta es predecible (sin coste, sin internet).
 
 ---
@@ -73,9 +74,9 @@ durruti/
 ├── config/              # Settings, budget, modelos
 ├── secrets/             # ⚠️ NUNCA en git
 ├── agents/              # Identidades + prompts + código de cada agente
-│   ├── durruti/
-│   ├── researcher/
-│   └── builder/
+│   ├── durruti/         # CEO Operativo
+│   ├── scout/           # Analista de Oportunidades (10 .md de diseño)
+│   └── builder/         # Constructor de entregables
 ├── shared/              # Núcleo común (LLM, memoria, guardrails, logs)
 ├── memory/              # Conocimiento persistente entre sesiones
 ├── tasks/               # Cola de trabajo

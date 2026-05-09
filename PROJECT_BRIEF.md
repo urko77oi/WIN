@@ -72,12 +72,12 @@ Elegido: **Durruti + 3-5 especialistas**. Pros: separación clara, escalable, co
 ### Roles
 
 - **Durruti (CEO Operativo)** — único punto de contacto con el humano. Recibe la orden, la descompone, decide qué especialista la ejecuta, supervisa, pide aprobaciones, y entrega el resultado consolidado. Tiene memoria de todos los proyectos activos y prioridades.
-- **Researcher** — investigación, scraping ligero, análisis de mercado, palabras clave, competencia, recopilación.
+- **Scout** — Analista de Oportunidades. Investigación multifuente, triple scoring (Conservador/Equilibrado/Agresivo), bandera de confianza obligatoria, challenge crítico al briefing. Identidad y playbook completos en `agents/scout/*.md`.
 - **Builder** — crea cosas: webs (HTML/Astro), código de automatizaciones, contenido (posts, emails, copy), procesos.
 - **Operator** (Fase 2) — mantiene cosas vivas: responde WhatsApp, publica en redes, envía emails, day-to-day.
 - **Auditor** (Fase 3) — revisa la calidad antes de entregar al usuario.
 
-### Por qué Fase 1 = Durruti + Researcher + Builder
+### Por qué Fase 1 = Durruti + Scout + Builder
 
 Operator necesita integraciones externas (WhatsApp, redes) con riesgo y curva de aprendizaje. Conviene postergar hasta tener algo que operar.
 
@@ -241,8 +241,8 @@ Ver `DOCTOR.md` para el protocolo completo.
 **Usuario (CLI/Telegram a Durruti):** "Quiero lanzar una landing para vender un curso de [tema]. Investiga el nicho y propón un plan."
 
 1. Durruti registra orden, crea `memory/projects/curso-[tema].md`.
-2. Genera tarea para Researcher.
-3. Researcher ejecuta, sintetiza informe.
+2. Genera tarea para Scout.
+3. Scout ejecuta, sintetiza informe.
 4. Durruti recibe hallazgos.
 5. Genera tarea para Builder.
 6. Builder devuelve propuesta.

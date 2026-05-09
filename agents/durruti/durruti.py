@@ -13,7 +13,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from agents.builder.builder import Builder
-from agents.researcher.researcher import Researcher
+from agents.scout.scout import Scout
 from shared import llm_client, memory
 from shared.human_channel import HumanChannel, canal_por_defecto
 from shared.logger import PROJECT_ROOT, log_de
@@ -43,6 +43,8 @@ def _clasificar_orden(orden: str) -> str:
     que el flujo sea predecible y barato.
     """
     o = orden.lower()
+    if "audita" in o or "auditar" in o:
+        return "auditar_competencia"
     if any(k in o for k in ("investiga", "research", "analiza", "estudia", "competencia", "nicho", "palabras clave")):
         return "investigar_nicho"
     if any(k in o for k in ("crea landing", "haz landing", "monta landing", "web", "landing")):
@@ -62,7 +64,7 @@ class Durruti:
     def __init__(self, canal: HumanChannel | None = None) -> None:
         self.canal = canal or canal_por_defecto()
         self.system_prompt = _cargar_system_prompt()
-        self.researcher = Researcher()
+        self.scout = Scout()
         self.builder = Builder()
         log.info("Durruti listo. Canal: " + self.canal.__class__.__name__)
 
@@ -83,6 +85,8 @@ class Durruti:
             return self._handle_status()
         if tipo == "investigar_nicho":
             return self._handle_investigar(orden)
+        if tipo == "auditar_competencia":
+            return self._handle_auditar_competencia(orden)
         if tipo == "crear_landing":
             return self._handle_crear_landing(orden)
         if tipo == "generar_contenido":
@@ -122,14 +126,33 @@ class Durruti:
             nombre=f"Investigación: {orden[:60]}",
             descripcion=orden,
         )
-        memory.anotar_en_bitacora(proyecto.slug, f"Durruti delega investigación a Researcher.")
-        informe = self.researcher.investigar(orden)
-        memory.anotar_en_bitacora(proyecto.slug, "Researcher entrega informe.")
+        memory.anotar_en_bitacora(proyecto.slug, f"Durruti delega investigación al Scout (WF-1).")
+        informe = self.scout.investigar(orden)
+        memory.anotar_en_bitacora(proyecto.slug, "Scout entrega memo con triple scoring.")
 
         texto = self._llamar_consolidacion(
             orden=orden,
             entrega_de_especialista=informe,
-            tipo_entrega="informe del Researcher",
+            tipo_entrega="memo del Scout (con triple scoring)",
+        )
+        self.canal.notificar(texto)
+        return Resultado(texto_para_humano=texto, proyecto_slug=proyecto.slug)
+
+    def _handle_auditar_competencia(self, orden: str) -> Resultado:
+        objetivo = orden.lower().replace("audita", "").replace("auditar", "").strip(": -")
+        objetivo = objetivo or orden
+        proyecto = memory.crear_proyecto(
+            nombre=f"Auditoría: {objetivo[:60]}",
+            descripcion=orden,
+        )
+        memory.anotar_en_bitacora(proyecto.slug, "Durruti delega auditoría al Scout.")
+        informe = self.scout.auditar_competidor(objetivo)
+        memory.anotar_en_bitacora(proyecto.slug, "Scout entrega informe de auditoría.")
+
+        texto = self._llamar_consolidacion(
+            orden=orden,
+            entrega_de_especialista=informe,
+            tipo_entrega="informe de auditoría del Scout",
         )
         self.canal.notificar(texto)
         return Resultado(texto_para_humano=texto, proyecto_slug=proyecto.slug)

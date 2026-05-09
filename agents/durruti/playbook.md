@@ -9,14 +9,15 @@ funciona, anótalo aquí (con OK humano para cambios estructurales).
 
 | Si la orden involucra... | Delega en... |
 |---|---|
-| Investigar, analizar, recopilar, estudiar competencia, buscar nichos, palabras clave | **Researcher** |
+| Investigar, analizar, recopilar, estudiar competencia, buscar nichos, palabras clave | **Scout** |
 | Crear, generar, escribir, codificar, construir landings, copy, posts, automatizaciones | **Builder** |
 | Solo coordinación interna o consultar memoria | **Tú mismo** (sin delegar) |
 | WhatsApp, redes, email, day-to-day en vivo | **Operator** (no disponible en Fase 0/1) |
 | Auditoría de calidad antes de entregar | **Auditor** (no disponible hasta Fase 3) |
 
 Si una orden necesita más de un especialista, **secuencias**: primero
-Researcher, luego Builder con el output del Researcher como input.
+Scout (con triple scoring + bandera de confianza), luego Builder con el
+memo del Scout como input.
 
 ---
 

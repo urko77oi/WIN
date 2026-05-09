@@ -69,7 +69,13 @@ def _modelo_para_agente(agente: str) -> str:
         data = yaml.safe_load(f) or {}
     if _modo_actual() == "mock":
         return ((data.get("modo_mock") or {}).get("modelo_simulado") or "mock")
-    return ((data.get("defaults") or {}).get(agente) or "haiku-4-5")
+    defaults = data.get("defaults") or {}
+    if agente in defaults:
+        return defaults[agente]
+    # Compatibilidad: si Scout no está en defaults, usa el del Researcher.
+    if agente == "scout" and "researcher" in defaults:
+        return defaults["researcher"]
+    return "haiku-4-5"
 
 
 # Mapeo de nuestros nombres internos al ID real de la API.
@@ -106,17 +112,42 @@ def _generar_mock(*, agente: str, system_prompt: str, mensaje_usuario: str) -> s
             mete créditos en console.anthropic.com y pon LLM_MODE=real en .env.)
         """).strip(),
 
+        "scout": textwrap.dedent(f"""
+            [MOCK · {semilla}]
+
+            ## TL;DR
+            Oportunidad simulada sobre «{mensaje_usuario.strip()[:120]}».
+            Veredicto: **validar con landing test**. Mejor perfil: ⚖️ Equilibrado.
+            Score primario: 7.4/10 · Confianza 🟡.
+
+            ## Triple scoring
+            - 🛡️ Conservador: 6.8/10 — Validar — 🟡
+            - ⚖️ Equilibrado: 7.4/10 — Validar — 🟡
+            - 🔥 Agresivo: 7.9/10 — Sprint validación 14 días — 🟡
+
+            ## Hallazgos clave
+            - Tamaño de mercado: medio, en crecimiento ~+25% YoY (simulado).
+            - Competencia: 3-5 actores establecidos; ningún dominador en nicho hispano.
+            - Pain points repetidos en comunidades: precio, accesibilidad, idioma.
+            - Saturación SEO: keywords core con KD medio; long-tail abierto.
+
+            ## Riesgos y dudas
+            - Datos de CAC/LTV son aproximaciones; falta validación real.
+            - No hay benchmarks públicos del sub-segmento exacto.
+
+            ## Recomendación
+            Landing test 14 días con 80€ de ads. Métrica de éxito definida
+            ANTES del test (ej: opt-in rate ≥ 3%). Si falla, pivotar al
+            sub-nicho B2B o cambiar ángulo.
+
+            ## Fuentes
+            1. [MOCK] Datos simulados — modo Fase 0. Para fuentes reales,
+               activar tools externas (Brave/Reddit/Trends) en Fase 1+.
+        """).strip(),
+
         "researcher": textwrap.dedent(f"""
-            [MOCK · {semilla}] Investigación simulada sobre: «{mensaje_usuario.strip()[:120]}».
-
-            Hallazgos (simulados):
-            - Tamaño de mercado: medio, en crecimiento.
-            - Competencia: 3-5 actores establecidos, espacio para nicho diferenciado.
-            - Palabras clave principales: [palabra1, palabra2, palabra3].
-            - Ángulo recomendado: enfoque en un sub-nicho específico con dolor real.
-
-            Próximo paso sugerido: pasar el brief al Builder para una landing
-            con copy orientado al ángulo identificado.
+            [MOCK · {semilla}] (Researcher deprecado — usar Scout.)
+            Investigación simulada sobre: «{mensaje_usuario.strip()[:120]}».
         """).strip(),
 
         "builder": textwrap.dedent(f"""

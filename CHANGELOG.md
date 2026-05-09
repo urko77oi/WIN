@@ -5,6 +5,34 @@ Formato libre, por fases. La fase activa va arriba.
 
 ---
 
+## [0.0.2] — 2026-05-09 — Integración del agente Scout
+
+### Cambiado
+- **Researcher reemplazado por Scout (Analista de Oportunidades).**
+  El founder entregó un diseño completo del Scout (10 archivos `.md`:
+  identity, mission, skills, tools, playbook, scoring, outputs, heartbeat,
+  memory, guardrails). Encajan con la filosofía de Durruti, así que se
+  adopta el Scout y se deprecia el Researcher placeholder.
+- `agents/researcher/` eliminado.
+- `agents/scout/` creado con los 10 `.md` originales + `system_prompt.md`
+  + `scout.py` + `INTEGRATION.md` que documenta las adaptaciones.
+- `Durruti` ahora delega investigación y auditoría de competencia en `Scout`.
+- Mock de Scout en `shared/llm_client.py` devuelve la estructura canónica
+  (TL;DR + triple scoring + hallazgos + riesgos + recomendación + fuentes).
+- Nueva orden operativa: `auditar_competencia` (mapea a `Scout.auditar_competidor`).
+- `config/models.yaml`: `researcher → scout` en defaults.
+
+### Adaptaciones explícitas vs. el diseño original del Scout
+Documentadas en `agents/scout/INTEGRATION.md`. Resumen:
+- Scout reporta a **Durruti**, no directamente al humano.
+- Outputs en `.md` (Fase 0). `.docx` queda para Fase 1+.
+- Heartbeat 24/7, modo pánico, watchdog, tools externas (Brave, Reddit,
+  Trends, marketplaces) y vector store: Fase 1+.
+- Comandos `agent:start scout` no se implementan; Scout se invoca a
+  través de `Durruti`.
+
+---
+
 ## [0.0.1] — 2026-05-09 — Fase 0: Andamiaje (sandbox)
 
 ### Añadido

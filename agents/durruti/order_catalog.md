@@ -16,7 +16,7 @@ requisitos de aprobación.
 - **Input:** nicho (texto), profundidad opcional (`baja`/`media`/`alta`).
 - **Pasos:**
   1. Crear/recuperar proyecto en memoria.
-  2. Delegar en Researcher con el brief.
+  2. Delegar en Scout con el brief.
   3. Recibir informe.
   4. Reportar al humano + dejar el `.md` en `outputs/research/`.
 - **Output:** informe en Markdown con tamaño de mercado, competencia,
@@ -49,7 +49,7 @@ requisitos de aprobación.
 ### 4. `auditar_competencia`
 - **Input:** competidor (URL, nombre).
 - **Pasos:**
-  1. Delegar en Researcher.
+  1. Delegar en Scout.
   2. Recibir informe.
   3. Reportar al humano.
 - **Output:** informe en `outputs/research/competencia/`.

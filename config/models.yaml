@@ -4,7 +4,7 @@
 # Modelos por defecto si no hay regla específica.
 defaults:
   durruti: haiku-4-5      # despachador, debe ser barato y rápido
-  researcher: sonnet-4-6  # síntesis y análisis, calidad media-alta
+  scout: sonnet-4-6       # síntesis y análisis, calidad media-alta
   builder: sonnet-4-6     # genera contenido y código
 
 # Reglas de escalado. Se evalúan en orden; la primera que aplica gana.
