@@ -1,5 +1,8 @@
-# Política de gasto y de aprobación humana.
+# Política de gasto y de aprobación humana del proyecto FORRARSE.
 # Editable. Si una llamada supera el límite duro, el sistema PAUSA.
+#
+# Última revisión de precios: 2026-05-09 (Anthropic — orientativos).
+# Si han pasado >3 meses, comprueba precios actualizados antes de fiarte.
 
 limites:
   diario_eur: 5.0

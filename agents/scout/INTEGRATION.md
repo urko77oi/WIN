@@ -17,7 +17,7 @@ El Scout está pensado en sus archivos como un agente que **reporta
 directamente al founder**. En Durruti la regla es distinta:
 
 > **Único interlocutor con el humano: Durruti (CEO Operativo).**
-> Scout, Builder y futuros agentes reportan a Durruti, no al humano.
+> Scout, Domenech (Builder) y futuros agentes reportan a Durruti, no al Founder.
 
 Adaptación operativa:
 - Donde los archivos del Scout dicen "founder" en sentido de "humano que

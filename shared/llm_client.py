@@ -73,10 +73,6 @@ def _modelo_para_agente(agente: str) -> str:
     if agente in defaults:
         return defaults[agente]
     # Compatibilidad: si Scout no está en defaults, usa el del Researcher.
-    if agente == "scout" and "researcher" in defaults:
-        return defaults["researcher"]
-    if agente == "domenech" and "builder" in defaults:
-        return defaults["builder"]
     return "haiku-4-5"
 
 
@@ -147,10 +143,6 @@ def _generar_mock(*, agente: str, system_prompt: str, mensaje_usuario: str) -> s
                activar tools externas (Brave/Reddit/Trends) en Fase 1+.
         """).strip(),
 
-        "researcher": textwrap.dedent(f"""
-            [MOCK · {semilla}] (Researcher deprecado — usar Scout.)
-            Investigación simulada sobre: «{mensaje_usuario.strip()[:120]}».
-        """).strip(),
 
         "domenech": textwrap.dedent(f"""
             [MOCK · {semilla}] Propuesta de Domenech (Builder).
@@ -190,9 +182,6 @@ def _generar_mock(*, agente: str, system_prompt: str, mensaje_usuario: str) -> s
             completo según `agents/domenech/playbook.md`.)
         """).strip(),
 
-        "builder": textwrap.dedent(f"""
-            [MOCK · {semilla}] (Builder placeholder deprecado — usar Domenech.)
-        """).strip(),
     }
 
     return plantillas.get(

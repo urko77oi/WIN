@@ -40,7 +40,7 @@ Busca líneas con `ERROR` o `WARNING`. Cópialas a Claude Code si no las entiend
 | `ModuleNotFoundError` al arrancar | Entorno no sincronizado | `uv sync` |
 | "No se encuentra .env" | Falta el archivo | `copy .env.example .env` |
 | "ANTHROPIC_API_KEY no definida" en `LLM_MODE=real` | Falta la key | Mete la key en `.env` o cambia a `LLM_MODE=mock` |
-| Durruti devuelve siempre lo mismo | Estás en `LLM_MODE=mock` | Es lo esperado en Fase 0 |
+| FORRARSE devuelve siempre lo mismo | Estás en `LLM_MODE=mock` | Es lo esperado en Fase 0 |
 | `database is locked` | Procesos paralelos sobre SQLite | Cierra el otro proceso o reinicia |
 | Tareas colgadas en `tasks/pending/` | Algo crasheó a medias | Mueve manualmente a `tasks/completed/` o re-arranca |
 | El sistema no responde y no hay logs | Proceso no arrancó | `uv run python scripts/start.py` y observa stdout |
@@ -49,7 +49,7 @@ Busca líneas con `ERROR` o `WARNING`. Cópialas a Claude Code si no las entiend
 
 ## 4. Modo pánico: parar todo
 
-Si Durruti se está comportando raro y quieres frenarlo:
+Si FORRARSE se está comportando raro y quieres frenarlo:
 
 - En el terminal donde corre: `Ctrl+C`.
 - Si dejó tareas a medias: revísalas en `tasks/in_progress/` y muévelas

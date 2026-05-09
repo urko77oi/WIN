@@ -11,22 +11,34 @@ heartbeat 24/7 descrito en `heartbeat.md`.
 """
 from __future__ import annotations
 
-from pathlib import Path
-
 from shared import llm_client
-from shared.logger import PROJECT_ROOT, log_de
+from shared.agent_loader import cargar_prompt_de
+from shared.logger import log_de
 
 _AGENTE = "scout"
 log = log_de(_AGENTE)
 
-PROMPT_PATH: Path = PROJECT_ROOT / "agents" / "scout" / "system_prompt.md"
+# Archivos .md del Scout que se concatenan para formar su prompt completo.
+# Orden pensado para que el modelo los lea de "quién soy" → "qué hago" →
+# "cómo lo hago" → "límites".
+_SCOUT_PROMPT_FILES: list[str] = [
+    "identity.md",
+    "mission.md",
+    "system_prompt.md",
+    "skills.md",
+    "tools.md",
+    "playbook.md",
+    "scoring.md",
+    "outputs.md",
+    "guardrails.md",
+]
 
 
 class Scout:
     """Agente analista de oportunidades de negocio online."""
 
     def __init__(self) -> None:
-        self.system_prompt = PROMPT_PATH.read_text(encoding="utf-8")
+        self.system_prompt = cargar_prompt_de(_AGENTE, _SCOUT_PROMPT_FILES)
 
     # ─────────────────────────────────────────────────────────────────
     # API que Durruti consume

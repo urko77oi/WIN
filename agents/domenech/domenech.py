@@ -15,22 +15,33 @@ mock. En Fase 1+:
 """
 from __future__ import annotations
 
-from pathlib import Path
-
 from shared import llm_client
-from shared.logger import PROJECT_ROOT, log_de
+from shared.agent_loader import cargar_prompt_de
+from shared.logger import log_de
 
 _AGENTE = "domenech"
 log = log_de(_AGENTE)
 
-PROMPT_PATH: Path = PROJECT_ROOT / "agents" / "domenech" / "system_prompt.md"
+# Archivos .md de Domenech que se concatenan para formar su prompt completo.
+# Orden: identidad → reglas operativas → catálogo de skills → workflows →
+# contratos JSON con otros agentes → guardrails → modelo de memoria.
+_DOMENECH_PROMPT_FILES: list[str] = [
+    "identity.md",
+    "system_prompt.md",
+    "skills.md",
+    "tools.md",
+    "playbook.md",
+    "interfaces.md",
+    "guardrails.md",
+    "memory.md",
+]
 
 
 class Domenech:
     """Agente constructor (Builder)."""
 
     def __init__(self) -> None:
-        self.system_prompt = PROMPT_PATH.read_text(encoding="utf-8")
+        self.system_prompt = cargar_prompt_de(_AGENTE, _DOMENECH_PROMPT_FILES)
 
     # ─────────────────────────────────────────────────────────────────
     # API que Durruti consume

@@ -1,4 +1,9 @@
-# PROJECT BRIEF v2 — Durruti & Equipo: Sistema Multi-Agente Autónomo de Negocios Online
+# PROJECT BRIEF — FORRARSE (Sistema Multi-Agente para Negocios Online)
+
+> **Proyecto:** FORRARSE
+> **CEO Operativo:** Durruti
+> **Equipo:** Scout (Analista de Oportunidades) + Domenech (Builder)
+> **Founder:** el humano que ha levantado FORRARSE
 
 > **Documento maestro para Claude Code.** Léelo entero antes de proponer nada. Al final, en §17, está el bloque "PRIMER MENSAJE A CLAUDE CODE" con la instrucción inicial exacta. Este documento es la fuente de verdad del proyecto; cualquier decisión que se tome durante el desarrollo debe ser consistente con lo aquí definido o actualizar este archivo explícitamente.
 
@@ -8,7 +13,7 @@
 
 Construir un **sistema multi-agente** ejecutado localmente en VS Code (Windows) que actúe como un equipo digital capaz de investigar, planificar, ejecutar, operar y reportar negocios online (gestión de redes, creación de webs, automatizaciones, gestión de WhatsApp, contenido).
 
-El sistema gira alrededor de **Durruti**, el CEO Operativo: único interlocutor con el usuario, descompone órdenes y delega en agentes especializados. Toda decisión que implique gastar dinero o ejecutar acciones irreversibles requiere **aprobación humana explícita** vía un canal que el usuario tenga siempre a mano (Telegram).
+El sistema (proyecto **FORRARSE**) gira alrededor de **Durruti**, el CEO Operativo: único interlocutor con el Founder, descompone órdenes y delega en su equipo (Scout, Domenech). Toda decisión que implique gastar dinero o ejecutar acciones irreversibles requiere **aprobación humana explícita** vía un canal que el usuario tenga siempre a mano (Telegram).
 
 **Filosofía:** empezar con lo MÍNIMO que funcione, validar, e ir añadiendo capacidades. No construir nada que aún no se necesite. Honestidad por encima de marketing: si algo no es realista, se dice y se propone alternativa.
 

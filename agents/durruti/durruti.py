@@ -10,19 +10,25 @@ catálogo dinámico, etc.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from pathlib import Path
-
 from agents.domenech.domenech import Domenech
 from agents.scout.scout import Scout
 from shared import llm_client, memory
+from shared.agent_loader import cargar_prompt_de
 from shared.human_channel import HumanChannel, canal_por_defecto
-from shared.logger import PROJECT_ROOT, log_de
+from shared.logger import log_de
 
 
 _AGENTE = "durruti"
 log = log_de(_AGENTE)
 
-PROMPT_PATH: Path = PROJECT_ROOT / "agents" / "durruti" / "system_prompt.md"
+# Archivos .md que componen el prompt de Durruti (en este orden).
+_DURRUTI_PROMPT_FILES: list[str] = [
+    "identity.md",
+    "system_prompt.md",
+    "tools.md",
+    "playbook.md",
+    "order_catalog.md",
+]
 
 
 @dataclass
@@ -30,10 +36,6 @@ class Resultado:
     """Resultado consolidado que Durruti devuelve tras procesar una orden."""
     texto_para_humano: str
     proyecto_slug: str | None = None
-
-
-def _cargar_system_prompt() -> str:
-    return PROMPT_PATH.read_text(encoding="utf-8")
 
 
 def _clasificar_orden(orden: str) -> str:
@@ -63,7 +65,7 @@ class Durruti:
 
     def __init__(self, canal: HumanChannel | None = None) -> None:
         self.canal = canal or canal_por_defecto()
-        self.system_prompt = _cargar_system_prompt()
+        self.system_prompt = cargar_prompt_de(_AGENTE, _DURRUTI_PROMPT_FILES)
         self.scout = Scout()
         self.domenech = Domenech()
         log.info("Durruti listo. Canal: " + self.canal.__class__.__name__)

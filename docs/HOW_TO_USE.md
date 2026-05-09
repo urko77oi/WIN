@@ -1,6 +1,10 @@
-# Cómo usar Durruti
+# Cómo usar FORRARSE
 
-Guía operativa para el humano. Si solo vas a leer un documento, lee éste.
+Guía operativa para el Founder. Si solo vas a leer un documento, lee éste.
+
+> Recuerda el organigrama: tú eres el **Founder**, hablas con **Durruti**
+> (CEO), y él dirige al equipo (Scout, Domenech). Nunca hablas
+> directamente con Scout o Domenech.
 
 ---
 
@@ -9,7 +13,7 @@ Guía operativa para el humano. Si solo vas a leer un documento, lee éste.
 Una vez por máquina:
 
 ```powershell
-cd durruti
+cd FORRARSE
 uv sync                # instala dependencias
 copy .env.example .env # crea tu archivo de entorno (no se sube a git)
 ```

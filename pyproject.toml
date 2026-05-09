@@ -1,7 +1,7 @@
 [project]
-name = "durruti"
-version = "0.0.1"
-description = "Sistema multi-agente: Durruti CEO + Researcher + Builder. Fase 0 (sandbox)."
+name = "forrarse"
+version = "0.1.0"
+description = "Proyecto FORRARSE — Sistema multi-agente para negocios online. CEO: Durruti. Equipo: Scout (oportunidades) + Domenech (Builder)."
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [

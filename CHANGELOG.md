@@ -1,7 +1,44 @@
 # CHANGELOG
 
-Cambios importantes del proyecto Durruti.
+Cambios importantes del proyecto **FORRARSE**.
 Formato libre, por fases. La fase activa va arriba.
+
+---
+
+## [0.1.0] — 2026-05-09 — Renombrado a FORRARSE + obra maestra
+
+### Renombrado
+- **Nombre del proyecto: FORRARSE.** El paquete (`pyproject.toml`) pasa
+  de `durruti` a `forrarse`. La carpeta física se renombra a `FORRARSE/`
+  por el Founder cuando cierre VS Code (Windows bloquea renombrar mientras
+  el editor está abierto en ella).
+
+### Organigrama explícito en el código y los prompts
+- **Founder** (humano) → **Durruti** (CEO Operativo) → **Scout / Domenech** (equipo).
+- Identidad y system_prompt de Durruti reescritos para reflejar:
+  CEO de FORRARSE, único interlocutor con el Founder, dirige a Scout y Domenech.
+- El término "humano" se sustituye por "Founder" en los prompts e identidades
+  internos para que el modelo entienda la jerarquía.
+
+### Bug crítico arreglado: `shared/agent_loader.py`
+- Antes: cada agente solo cargaba `system_prompt.md` (~70 líneas) y dejaba
+  fuera identity, mission, skills, playbook, scoring, guardrails…
+  En modo real, el modelo no habría tenido el contexto completo del founder.
+- Ahora: cada agente compone su prompt vía `cargar_prompt_de(agente, [...])`,
+  que antepone el bloque `CONTEXTO_FORRARSE` (organigrama + reglas
+  inviolables) y concatena los `.md` relevantes en el orden adecuado.
+- Cada agente declara su lista en su clase Python (constante `_*_PROMPT_FILES`).
+
+### Limpieza
+- Mocks zombies (`researcher`, `builder` en `_generar_mock`) eliminados.
+- `agents/__init__.py` actualizado con organigrama de FORRARSE.
+- `agents/domenech/system_prompt.md` adaptado: "Eres Builder" → "Eres Domenech".
+- `agents/scout/INTEGRATION.md`: lenguaje unificado ("Founder" en vez de "humano").
+- `config/budget.yaml`: añadido timestamp de revisión de precios.
+
+### Smoke test
+- Las 3 órdenes (investigar, crear landing, auditar competidor) + status
+  funcionan end-to-end con el loader nuevo. Logs limpios.
 
 ---
 
