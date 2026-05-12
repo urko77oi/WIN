@@ -2,100 +2,85 @@
   "contabilidad_autonomos": {
     "id": "contabilidad_autonomos",
     "nombre": "Software contabilidad para autonomos espana",
-    "score": 8,
-    "viabilidad": "BAJA",
+    "score": 65,
+    "viabilidad": "ALTA",
     "precio_medio_eur": 0,
     "precios_rango": [],
-    "demanda": 0,
-    "gap_mercado": 0,
+    "demanda": 18,
+    "gap_mercado": 5,
     "competidores": [
-      "factura"
+      "holded",
+      "factura",
+      "shopify",
+      "woocommerce"
     ],
     "dominios_libres": [
       ".es",
       ".io"
     ],
-    "n_resultados": 15,
-    "ts": "2026-05-12 20:40"
+    "n_resultados": 17,
+    "ts": "2026-05-12 21:53"
   },
   "formacion_online_espana": {
     "id": "formacion_online_espana",
     "nombre": "Cursos online para profesionales hispanohablantes",
-    "score": 14,
+    "score": 26,
     "viabilidad": "BAJA",
-    "precio_medio_eur": 0,
-    "precios_rango": [],
-    "demanda": 1,
+    "precio_medio_eur": 12,
+    "precios_rango": [
+      10,
+      15
+    ],
+    "demanda": 5,
     "gap_mercado": 0,
-    "competidores": [],
+    "competidores": [
+      "factura",
+      "hotmart"
+    ],
     "dominios_libres": [
       ".io"
     ],
-    "n_resultados": 17,
-    "ts": "2026-05-12 20:40"
+    "n_resultados": 16,
+    "ts": "2026-05-12 21:53"
   },
   "herramientas_freelance": {
     "id": "herramientas_freelance",
     "nombre": "Herramientas SaaS para freelancers hispanohablantes",
-    "score": 14,
-    "viabilidad": "BAJA",
-    "precio_medio_eur": 0,
-    "precios_rango": [],
-    "demanda": 1,
-    "gap_mercado": 0,
-    "competidores": [],
-    "dominios_libres": [
-      ".com",
-      ".es",
-      ".io"
+    "score": 71,
+    "viabilidad": "ALTA",
+    "precio_medio_eur": 354,
+    "precios_rango": [
+      35,
+      40,
+      45,
+      60,
+      80,
+      150,
+      400,
+      2023
     ],
-    "n_resultados": 13,
-    "ts": "2026-05-12 20:40"
-  },
-  "contenido_digital_pymes": {
-    "id": "contenido_digital_pymes",
-    "nombre": "Servicios de contenido digital para pymes espanolas",
-    "score": 10,
-    "viabilidad": "BAJA",
-    "precio_medio_eur": 0,
-    "precios_rango": [],
-    "demanda": 0,
+    "demanda": 33,
     "gap_mercado": 0,
-    "competidores": [],
-    "dominios_libres": [
-      ".com",
-      ".es",
-      ".io"
+    "competidores": [
+      "factura",
+      "sage"
     ],
-    "n_resultados": 15,
-    "ts": "2026-05-12 21:09"
-  },
-  "consultoria_ia_pymes": {
-    "id": "consultoria_ia_pymes",
-    "nombre": "Consultoria IA para pymes y autonomos",
-    "score": 14,
-    "viabilidad": "BAJA",
-    "precio_medio_eur": 0,
-    "precios_rango": [],
-    "demanda": 1,
-    "gap_mercado": 0,
-    "competidores": [],
     "dominios_libres": [
       ".com",
       ".es",
       ".io"
     ],
     "n_resultados": 16,
-    "ts": "2026-05-12 21:09"
+    "ts": "2026-05-12 21:53"
   },
-  "productos_digitales_autonomos": {
-    "id": "productos_digitales_autonomos",
-    "nombre": "Productos digitales descargables para autonomos",
-    "score": 14,
+  "contenido_digital_pymes": {
+    "id": "contenido_digital_pymes",
+    "nombre": "Servicios de contenido digital para pymes espanolas",
+    "score": 29,
     "viabilidad": "BAJA",
     "precio_medio_eur": 0,
     "precios_rango": [],
-    "demanda": 1,
+    "demanda": 12,
     "gap_mercado": 0,
     "competidores": [],
     "dominios_libres": [
@@ -103,7 +88,148 @@
       ".es",
       ".io"
     ],
+    "n_resultados": 14,
+    "ts": "2026-05-12 21:54"
+  },
+  "consultoria_ia_pymes": {
+    "id": "consultoria_ia_pymes",
+    "nombre": "Consultoria IA para pymes y autonomos",
+    "score": 18,
+    "viabilidad": "BAJA",
+    "precio_medio_eur": 0,
+    "precios_rango": [],
+    "demanda": 4,
+    "gap_mercado": 1,
+    "competidores": [
+      "sage",
+      "a3"
+    ],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 17,
+    "ts": "2026-05-12 21:54"
+  },
+  "productos_digitales_autonomos": {
+    "id": "productos_digitales_autonomos",
+    "nombre": "Productos digitales descargables para autonomos",
+    "score": 46,
+    "viabilidad": "MEDIA",
+    "precio_medio_eur": 271,
+    "precios_rango": [
+      240,
+      260,
+      315
+    ],
+    "demanda": 10,
+    "gap_mercado": 0,
+    "competidores": [],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 14,
+    "ts": "2026-05-12 21:54"
+  },
+  "comunidades_pago_espana": {
+    "id": "comunidades_pago_espana",
+    "nombre": "Comunidades de pago online para profesionales espanoles",
+    "score": 37,
+    "viabilidad": "MEDIA",
+    "precio_medio_eur": 1800,
+    "precios_rango": [
+      1800
+    ],
+    "demanda": 8,
+    "gap_mercado": 0,
+    "competidores": [
+      "skool",
+      "substack"
+    ],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 18,
+    "ts": "2026-05-12 21:55"
+  },
+  "traduccion_localizacion": {
+    "id": "traduccion_localizacion",
+    "nombre": "Servicios de traduccion y localizacion para empresas",
+    "score": 75,
+    "viabilidad": "ALTA",
+    "precio_medio_eur": 753,
+    "precios_rango": [
+      6,
+      9,
+      10,
+      25,
+      45,
+      55,
+      75,
+      95
+    ],
+    "demanda": 48,
+    "gap_mercado": 0,
+    "competidores": [
+      "woocommerce"
+    ],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
     "n_resultados": 15,
-    "ts": "2026-05-12 21:09"
+    "ts": "2026-05-12 21:55"
+  },
+  "coaching_autonomos": {
+    "id": "coaching_autonomos",
+    "nombre": "Coaching y mentoría para autónomos y emprendedores",
+    "score": 62,
+    "viabilidad": "MEDIA",
+    "precio_medio_eur": 425,
+    "precios_rango": [
+      6,
+      10,
+      20,
+      1667
+    ],
+    "demanda": 98,
+    "gap_mercado": 0,
+    "competidores": [
+      "factura"
+    ],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 17,
+    "ts": "2026-05-12 21:55"
+  },
+  "ecommerce_nicho": {
+    "id": "ecommerce_nicho",
+    "nombre": "Tiendas online de nicho con baja competencia",
+    "score": 25,
+    "viabilidad": "BAJA",
+    "precio_medio_eur": 0,
+    "precios_rango": [],
+    "demanda": 5,
+    "gap_mercado": 2,
+    "competidores": [
+      "a3",
+      "shopify"
+    ],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 15,
+    "ts": "2026-05-12 21:56"
   }
 }
