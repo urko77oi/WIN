@@ -19,7 +19,7 @@ $nCambios = ($status | Measure-Object -Line).Lines
 # Commit y push
 git add -A 2>&1 | Out-Null
 git commit -m "Auto-commit sesion $fecha ($nCambios cambios)" 2>&1 | Out-Null
-$pushResult = git push origin master 2>&1
+$pushResult = git push origin main 2>&1
 
 if ($LASTEXITCODE -eq 0) {
     Write-Output "{`"systemMessage`": `"GitHub actualizado: $nCambios archivos pusheados ($fecha)`"}"
