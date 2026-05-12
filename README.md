@@ -100,6 +100,45 @@ llamadas pasan a ser reales con el contexto completo de cada agente.
 
 ---
 
+## Voz en local (stack gratuito)
+
+**Stack:** Groq Whisper Large v3 (STT) + Groq Llama 3.3 70B (LLM) + Microsoft Edge TTS (TTS).
+Todo gratuito, sin tarjeta de crédito.
+
+### Variables de entorno necesarias en `.env`
+
+```
+GROQ_API_KEY=gsk_...          # console.groq.com → API Keys → Create key (gratis)
+DURRUTI_VOICE_ID=es-ES-AlvaroNeural   # voz de Edge TTS (ver opciones abajo)
+```
+
+### Scripts de voz
+
+| Comando | Qué hace |
+|---|---|
+| `uv run python scripts/test_voz.py` | Prueba que edge-tts funciona y reproduce audio |
+| `uv run python scripts/test_voz.py --voces` | Reproduce todas las voces en español para elegir |
+| `uv run python scripts/voz_chat.py` | Chat push-to-talk: Enter → habla → Durruti responde por voz |
+| `uv run python scripts/durruti_escucha.py` | Siempre activo: di "Buenaventura Durruti" para activar |
+
+### Voces recomendadas (Edge TTS, sin coste)
+
+| DURRUTI_VOICE_ID | Descripción |
+|---|---|
+| `es-ES-AlvaroNeural` | Hombre, España — por defecto |
+| `es-ES-ElviraNeural` | Mujer, España — natural y clara |
+| `es-MX-JorgeNeural` | Hombre, México |
+| `es-MX-DaliaNeural` | Mujer, México |
+
+Para cambiar la voz: edita `DURRUTI_VOICE_ID` en `.env`, o usa `--voces` para escucharlas antes.
+
+### Solución al eco (mic capta los altavoces)
+
+Usa **auriculares** mientras hablas con Durruti. Sin auriculares el micro
+capta la voz de Durruti y se crea un bucle. Es un problema de hardware, no de código.
+
+---
+
 ## Estructura
 
 ```

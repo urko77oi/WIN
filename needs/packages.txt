@@ -1,0 +1,5 @@
+# Los agentes declaran aqui los paquetes que necesitan.
+# El daemon los instala al arrancar y limpia el archivo.
+# Formato: un paquete por linea. Ejemplo:
+#   requests
+#   beautifulsoup4

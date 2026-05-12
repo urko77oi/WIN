@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutonomoTools — Herramientas digitales para autónomos españoles</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --azul: #1a3a5c;
+    --naranja: #f4821f;
+    --claro: #f7f9fc;
+    --gris: #6b7280;
+    --blanco: #ffffff;
+    --fuente: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  body { font-family: var(--fuente); color: #111827; background: var(--blanco); line-height: 1.6; }
+
+  /* NAV */
+  nav {
+    background: var(--azul);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .logo { color: var(--blanco); font-size: 1.3rem; font-weight: 700; letter-spacing: -0.5px; }
+  .logo span { color: var(--naranja); }
+  nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; margin-left: 1.5rem; }
+  nav a:hover { color: var(--naranja); }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, var(--azul) 0%, #264d7a 100%);
+    color: var(--blanco);
+    padding: 5rem 1.5rem 4rem;
+    text-align: center;
+  }
+  .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; line-height: 1.15; margin-bottom: 1.2rem; }
+  .hero h1 em { color: var(--naranja); font-style: normal; }
+  .hero p { font-size: 1.15rem; color: rgba(255,255,255,0.85); max-width: 580px; margin: 0 auto 2rem; }
+  .btn {
+    display: inline-block;
+    background: var(--naranja);
+    color: var(--blanco);
+    padding: 0.85rem 2.2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s;
+    border: none; cursor: pointer;
+  }
+  .btn:hover { background: #d9700f; }
+  .btn-outline {
+    background: transparent;
+    border: 2px solid var(--naranja);
+    color: var(--naranja);
+    margin-left: 1rem;
+  }
+  .btn-outline:hover { background: var(--naranja); color: var(--blanco); }
+
+  /* SECCIONES */
+  section { padding: 4rem 1.5rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  h2 { font-size: 1.9rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--azul); }
+  .subtitulo { color: var(--gris); margin-bottom: 2.5rem; font-size: 1.05rem; }
+
+  /* PROBLEMAS */
+  .problemas { background: var(--claro); }
+  .cards-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+  .card {
+    background: var(--blanco);
+    border-radius: 10px;
+    padding: 1.8rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  }
+  .card .icon { font-size: 2.2rem; margin-bottom: 0.8rem; }
+  .card h3 { font-size: 1.05rem; font-weight: 700; color: var(--azul); margin-bottom: 0.5rem; }
+  .card p { color: var(--gris); font-size: 0.95rem; }
+
+  /* SOLUCION */
+  .solucion-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+  .solucion-grid ul { list-style: none; }
+  .solucion-grid ul li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex; align-items: flex-start; gap: 0.7rem;
+    font-size: 0.97rem;
+  }
+  .solucion-grid ul li::before { content: "✅"; flex-shrink: 0; }
+  @media (max-width: 640px) { .solucion-grid { grid-template-columns: 1fr; } }
+
+  /* CATEGORIAS */
+  .categorias { background: var(--azul); color: var(--blanco); }
+  .categorias h2 { color: var(--blanco); }
+  .categorias .subtitulo { color: rgba(255,255,255,0.7); }
+  .cat-card {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 10px;
+    padding: 1.8rem;
+    transition: background 0.2s;
+  }
+  .cat-card:hover { background: rgba(255,255,255,0.14); }
+  .cat-card h3 { color: var(--naranja); font-size: 1.1rem; margin-bottom: 0.8rem; }
+  .cat-card ul { list-style: none; }
+  .cat-card ul li { color: rgba(255,255,255,0.85); padding: 0.35rem 0; font-size: 0.92rem; }
+  .cat-card ul li::before { content: "→ "; color: var(--naranja); }
+  .badge {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    margin-left: 0.4rem;
+    vertical-align: middle;
+  }
+  .badge-free { background: #10b981; color: #fff; }
+  .badge-low { background: #f59e0b; color: #fff; }
+
+  /* TESTIMONIOS */
+  .testimonios { background: var(--claro); }
+  .testimonial {
+    background: var(--blanco);
+    border-left: 4px solid var(--naranja);
+    border-radius: 0 10px 10px 0;
+    padding: 1.5rem 1.8rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .testimonial p { font-style: italic; color: #374151; margin-bottom: 0.8rem; font-size: 0.97rem; }
+  .testimonial strong { color: var(--azul); font-size: 0.9rem; }
+
+  /* NEWSLETTER */
+  .newsletter { background: linear-gradient(135deg, #f4821f 0%, #d9700f 100%); color: var(--blanco); text-align: center; }
+  .newsletter h2 { color: var(--blanco); font-size: 2rem; }
+  .newsletter p { color: rgba(255,255,255,0.9); margin-bottom: 1.8rem; font-size: 1.05rem; }
+  .form-inline { display: flex; gap: 0.8rem; max-width: 480px; margin: 0 auto; flex-wrap: wrap; justify-content: center; }
+  .form-inline input {
+    flex: 1; min-width: 220px;
+    padding: 0.85rem 1rem;
+    border: none; border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+  }
+  .btn-blanco { background: var(--azul); color: var(--blanco); }
+  .btn-blanco:hover { background: #0f2640; }
+  .form-note { margin-top: 0.8rem; font-size: 0.82rem; color: rgba(255,255,255,0.75); }
+
+  /* FOOTER */
+  footer {
+    background: var(--azul);
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+    padding: 2rem 1.5rem;
+    font-size: 0.85rem;
+  }
+  footer a { color: rgba(255,255,255,0.5); text-decoration: none; margin: 0 0.6rem; }
+  footer a:hover { color: var(--naranja); }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">Autonomo<span>Tools</span></div>
+  <div>
+    <a href="#categorias">Herramientas</a>
+    <a href="#newsletter">Newsletter gratis</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>Para de perder tiempo buscando.<br>Las mejores herramientas para<br><em>autónomos españoles</em>, ya curadas.</h1>
+    <p>Comparamos, probamos y explicamos en castellano las herramientas que necesitas para facturar, trabajar y conseguir clientes — sin perder horas leyendo en inglés.</p>
+    <a href="#categorias" class="btn">Ver herramientas gratis</a>
+    <a href="#newsletter" class="btn btn-outline">Newsletter semanal</a>
+  </div>
+</section>
+
+<!-- PROBLEMAS -->
+<section class="problemas">
+  <div class="container">
+    <h2>¿Te suena alguno de estos problemas?</h2>
+    <p class="subtitulo">Los autónomos españoles pierden hasta 8 horas semanales en tareas que las herramientas correctas resolverían en minutos.</p>
+    <div class="cards-3">
+      <div class="card">
+        <div class="icon">🔍</div>
+        <h3>Demasiadas opciones, cero claridad</h3>
+        <p>Buscas "mejor app de facturación" y encuentras 40 artículos en inglés con afiliados disfrazados de análisis.</p>
+      </div>
+      <div class="card">
+        <div class="icon">💸</div>
+        <h3>Pagas por herramientas que no usas</h3>
+        <p>Tienes 5 suscripciones activas. Tres las renovaste por inercia. No sabes si hay algo mejor y más barato.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⏳</div>
+        <h3>Meses de prueba hasta encontrar la correcta</h3>
+        <p>Cada herramienta nueva son horas de configuración, aprendizaje y frustración. Y si no funciona, vuelta a empezar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUCIÓN -->
+<section>
+  <div class="container">
+    <div class="solucion-grid">
+      <div>
+        <h2>AutonomoTools lo resuelve</h2>
+        <p class="subtitulo">Filtramos el ruido para que tú solo veas lo que funciona para autónomos en España.</p>
+        <ul>
+          <li>Análisis honestos en castellano, sin tecnicismos</li>
+          <li>Comparativas reales: precio, funciones, soporte en español</li>
+          <li>Guías paso a paso para empezar en menos de 30 minutos</li>
+          <li>Alternativas gratuitas siempre que existan</li>
+          <li>Actualizado mensualmente — sin herramientas obsoletas</li>
+          <li>Enfocado en autónomos: no vale todo lo que sirve a una empresa de 50 personas</li>
+        </ul>
+      </div>
+      <div>
+        <div class="card" style="border-left: 4px solid var(--naranja);">
+          <h3 style="color:var(--azul);margin-bottom:1rem;">Lo que encontrarás</h3>
+          <p style="color:var(--gris);font-size:0.95rem;margin-bottom:0.6rem;">✅ +80 herramientas analizadas</p>
+          <p style="color:var(--gris);font-size:0.95rem;margin-bottom:0.6rem;">✅ Comparativas por categoría</p>
+          <p style="color:var(--gris);font-size:0.95rem;margin-bottom:0.6rem;">✅ Guías de configuración</p>
+          <p style="color:var(--gris);font-size:0.95rem;margin-bottom:0.6rem;">✅ Newsletter con novedades</p>
+          <p style="color:var(--gris);font-size:0.95rem;">✅ Acceso 100% gratuito</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIAS -->
+<section class="categorias" id="categorias">
+  <div class="container">
+    <h2>Elige tu categoría</h2>
+    <p class="subtitulo">Las tres áreas donde los autónomos más tiempo (y dinero) pierden.</p>
+    <div class="cards-3">
+      <div class="cat-card">
+        <h3>🧾 Facturación y contabilidad</h3>
+        <ul>
+          <li>Quipu <span class="badge badge-low">9€/mes</span></li>
+          <li>Holded <span class="badge badge-low">14€/mes</span></li>
+          <li>Conta Simple <span class="badge badge-free">gratis</span></li>
+          <li>Sage 50 Cloud</li>
+          <li>Invoice Ninja <span class="badge badge-free">gratis</span></li>
+        </ul>
+      </div>
+      <div class="cat-card">
+        <h3>⚡ Productividad y organización</h3>
+        <ul>
+          <li>Notion <span class="badge badge-free">gratis</span></li>
+          <li>Toggl Track <span class="badge badge-free">gratis</span></li>
+          <li>Calendly <span class="badge badge-free">gratis</span></li>
+          <li>Zapier <span class="badge badge-free">gratis</span></li>
+          <li>ClickUp <span class="badge badge-free">gratis</span></li>
+        </ul>
+      </div>
+      <div class="cat-card">
+        <h3>🎯 Conseguir clientes</h3>
+        <ul>
+          <li>LinkedIn Sales Navigator</li>
+          <li>Malt <span class="badge badge-free">gratis</span></li>
+          <li>Mailerlite <span class="badge badge-free">gratis</span></li>
+          <li>Canva Pro <span class="badge badge-low">13€/mes</span></li>
+          <li>Apollo.io <span class="badge badge-free">gratis</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="testimonios">
+  <div class="container">
+    <h2>Lo que dicen otros autónomos</h2>
+    <p class="subtitulo">Gente como tú que encontró la herramienta correcta a la primera.</p>
+    <div class="cards-3">
+      <div class="testimonial">
+        <p>"Llevaba 2 años pagando Holded sin usarlo al 20%. La guía de AutonomoTools me mostró que Quipu era exactamente lo que necesitaba y era la mitad de precio."</p>
+        <strong>— Marta G., diseñadora freelance, Barcelona</strong>
+      </div>
+      <div class="testimonial">
+        <p>"Por fin una comparativa en español que no parece un artículo de afiliados disfrazado. Encontré una herramienta gratuita de control del tiempo que uso todos los días."</p>
+        <strong>— Javier P., consultor IT, Madrid</strong>
+      </div>
+      <div class="testimonial">
+        <p>"La guía de LinkedIn para autónomos me consiguió 3 clientes nuevos en un mes. Llevaba años con el perfil a medias porque nadie lo explicaba así de claro."</p>
+        <strong>— Ana R., traductora, Valencia</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter" id="newsletter">
+  <div class="container">
+    <h2>Recibe las mejores herramientas cada semana</h2>
+    <p>Un email semanal con la herramienta más útil de la semana, comparativas y trucos para autónomos. Sin spam. Sin rollos. Puedes darte de baja cuando quieras.</p>
+    <form class="form-inline" onsubmit="handleSubmit(event)">
+      <input type="email" placeholder="tu@email.com" required id="email-input">
+      <button type="submit" class="btn btn-blanco">Suscribirme gratis</button>
+    </form>
+    <p class="form-note">Ya somos más de 1.200 autónomos. 100% gratis, siempre.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p style="margin-bottom:0.6rem">
+    <a href="#">Aviso legal</a>
+    <a href="#">Política de privacidad</a>
+    <a href="#">Cookies</a>
+    <a href="#">Contacto</a>
+  </p>
+  <p>© 2025 AutonomoTools · Herramientas digitales para autónomos españoles</p>
+</footer>
+
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  var email = document.getElementById('email-input').value;
+  var btn = e.target.querySelector('button');
+  btn.textContent = '¡Apuntado! 🎉';
+  btn.disabled = true;
+  btn.style.background = '#10b981';
+  console.log('Email capturado:', email);
+}
+</script>
+</body>
+</html>

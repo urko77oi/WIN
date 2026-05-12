@@ -112,27 +112,32 @@ class CLIChannel(HumanChannel):
 
 
 # ─────────────────────────────────────────────────────────────────────
-# Stub para Telegram (Fase 1)
+# Implementación Telegram (Fase 1)
 # ─────────────────────────────────────────────────────────────────────
 
 class TelegramChannel(HumanChannel):
-    """Implementación pendiente para Fase 1.
+    """Canal Telegram. Delega el envío en shared.telegram_bot (importación lazy
+    para evitar circular imports). Requiere que el bot esté corriendo."""
 
-    Cuando se active: leerá `TELEGRAM_BOT_TOKEN` y `TELEGRAM_CHAT_ID` de
-    `.env`, abrirá conexión con la API de Telegram Bot, enviará mensajes
-    con botones inline para aprobar/rechazar, y bloqueará hasta recibir
-    respuesta (con timeouts y reintentos según `runtime.espera_aprobacion_max_min`).
-    """
+    def notificar(self, mensaje: str) -> None:
+        from shared import telegram_bot as tb
+        tb.enviar_texto_sync(mensaje)
+        log.info(f"[telegram/notif] {mensaje[:120]}")
 
-    def __init__(self) -> None:
-        raise NotImplementedError(
-            "TelegramChannel se activa en Fase 1. "
-            "Por ahora usa CLIChannel."
-        )
+    def alertar(self, mensaje: str) -> None:
+        from shared import telegram_bot as tb
+        tb.enviar_texto_sync(f"⚠️ *ALERTA*\n\n{mensaje}")
+        log.warning(f"[telegram/alerta] {mensaje[:120]}")
 
-    def notificar(self, mensaje: str) -> None: raise NotImplementedError
-    def alertar(self, mensaje: str) -> None: raise NotImplementedError
-    def preguntar(self, pregunta: str) -> str: raise NotImplementedError
+    def preguntar(self, pregunta: str) -> str:
+        # En Fase 1 las preguntas abiertas se envían como texto.
+        # El usuario responde en el siguiente mensaje; por ahora devolvemos
+        # cadena vacía y Durruti reintentará si necesita la respuesta.
+        from shared import telegram_bot as tb
+        tb.enviar_texto_sync(f"❓ *Pregunta de Durruti:*\n\n{pregunta}")
+        log.info(f"[telegram/pregunta] {pregunta[:120]}")
+        return ""
+
     def solicitar_aprobacion(
         self,
         *,
@@ -140,7 +145,16 @@ class TelegramChannel(HumanChannel):
         motivos: list[str],
         coste_estimado_eur: float = 0.0,
         contexto: str = "",
-    ) -> Aprobacion: raise NotImplementedError
+    ) -> Aprobacion:
+        from shared import telegram_bot as tb
+        aprobada, comentario = tb.solicitar_aprobacion_sync(
+            accion=accion,
+            motivos=motivos,
+            coste_estimado_eur=coste_estimado_eur,
+            contexto=contexto,
+        )
+        log.info(f"[telegram/aprobacion] accion={accion!r} aprobada={aprobada}")
+        return Aprobacion(aprobada=aprobada, comentario=comentario)
 
 
 # ─────────────────────────────────────────────────────────────────────
@@ -148,8 +162,8 @@ class TelegramChannel(HumanChannel):
 # ─────────────────────────────────────────────────────────────────────
 
 def canal_por_defecto() -> HumanChannel:
-    """Devuelve el canal humano apropiado para esta fase.
-
-    Fase 0: CLI siempre. Fase 1+: Telegram si está configurado, CLI como fallback.
-    """
+    """CLI en Fase 0. Telegram si el token está configurado."""
+    import os
+    if os.getenv("TELEGRAM_BOT_TOKEN"):
+        return TelegramChannel()
     return CLIChannel()

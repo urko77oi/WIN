@@ -1,0 +1,119 @@
+1
+00:00:00,000 --> 00:00:05,200
+Si eres autonomo en Espana y aun no tienes claro como facturar correctamente
+
+2
+00:00:05,200 --> 00:00:11,199
+en 2026, este video es para ti. En ocho minutos te explico todo lo que
+
+3
+00:00:11,199 --> 00:00:15,199
+necesitas saber. Sin tecnicismos. Sin rollos.
+
+4
+00:00:15,199 --> 00:00:19,600
+Primero, lo basico: que debe tener una factura legal en Espana.
+
+5
+00:00:19,600 --> 00:00:23,600
+Numero de factura correlativo. Fecha de emision. Tus datos completos:
+
+6
+00:00:23,600 --> 00:00:28,000
+nombre o razon social, NIF, direccion. Datos del cliente: lo mismo.
+
+7
+00:00:28,000 --> 00:00:32,000
+Descripcion del servicio. Base imponible. IVA (normalmente el veintiuno
+
+8
+00:00:32,000 --> 00:00:36,000
+por ciento). Retencion si aplica (habitualmente el quince por ciento
+
+9
+00:00:36,000 --> 00:00:40,000
+si el cliente es empresa). Total.
+
+10
+00:00:40,000 --> 00:00:44,399
+Segundo: el IVA. Si eres autonomo persona fisica en regimen general,
+
+11
+00:00:44,399 --> 00:00:49,200
+cargas un veintiuno por ciento de IVA. Ese dinero no es tuyo.
+
+12
+00:00:49,200 --> 00:00:54,800
+Lo cobras al cliente y lo ingresas a Hacienda cada trimestre en el modelo
+
+13
+00:00:54,800 --> 00:00:58,800
+tres cero tres. No lo gastes.
+
+14
+00:00:58,800 --> 00:01:03,600
+Tercero: la retencion. Si tu cliente es una empresa o autonomo espanol,
+
+15
+00:01:03,600 --> 00:01:08,400
+generalmente te aplican una retencion del quince por ciento en el IRPF.
+
+16
+00:01:08,400 --> 00:01:13,200
+Eso significa que te pagan menos, pero tu ya esas pagando impuestos
+
+17
+00:01:13,200 --> 00:01:17,200
+adelantados. Se descuenta en tu declaracion anual.
+
+18
+00:01:17,200 --> 00:01:21,600
+Cuarto: el modelo ciento treinta. Si eres autonomo en estimacion directa
+
+19
+00:01:21,600 --> 00:01:26,400
+y tus clientes no te retienen, tienes que presentar este modelo cada
+
+20
+00:01:26,400 --> 00:01:31,600
+trimestre para pagar el IRPF a cuenta. Tu gestor te dira si aplica.
+
+21
+00:01:31,600 --> 00:01:35,600
+Quinto: herramientas. Para facturar, las opciones gratuitas como
+
+22
+00:01:35,600 --> 00:01:39,600
+Conta Simple o Invoice Ninja son suficientes para la mayoria.
+
+23
+00:01:39,600 --> 00:01:44,000
+Si necesitas algo mas robusto, Quipu desde nueve euros al mes
+
+24
+00:01:44,000 --> 00:01:48,000
+o Holded desde catorce.
+
+25
+00:01:48,000 --> 00:01:52,400
+Y el consejo mas importante: guarda todas tus facturas, tanto las
+
+26
+00:01:52,400 --> 00:01:57,200
+que emites como las que recibes. Cuatro anos de prescripcion en Espana
+
+27
+00:01:57,200 --> 00:02:02,400
+y no quieres buscar un gasto de hace tres anos en tu correo.
+
+28
+00:02:02,400 --> 00:02:07,200
+En la descripcion tienes el link a la comunidad gratuita donde hemos
+
+29
+00:02:07,200 --> 00:02:12,000
+preparado una plantilla de factura lista para usar y una guia completa.
+
+30
+00:02:12,000 --> 00:02:16,800
+Si te ha quedado alguna duda, dejala en los comentarios. Leo todos.

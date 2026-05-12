@@ -1,0 +1,55 @@
+{
+  "contabilidad_autonomos": {
+    "id": "contabilidad_autonomos",
+    "nombre": "Software contabilidad para autonomos espana",
+    "score": 8,
+    "viabilidad": "BAJA",
+    "precio_medio_eur": 0,
+    "precios_rango": [],
+    "demanda": 0,
+    "gap_mercado": 0,
+    "competidores": [
+      "factura"
+    ],
+    "dominios_libres": [
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 15,
+    "ts": "2026-05-12 20:40"
+  },
+  "formacion_online_espana": {
+    "id": "formacion_online_espana",
+    "nombre": "Cursos online para profesionales hispanohablantes",
+    "score": 14,
+    "viabilidad": "BAJA",
+    "precio_medio_eur": 0,
+    "precios_rango": [],
+    "demanda": 1,
+    "gap_mercado": 0,
+    "competidores": [],
+    "dominios_libres": [
+      ".io"
+    ],
+    "n_resultados": 17,
+    "ts": "2026-05-12 20:40"
+  },
+  "herramientas_freelance": {
+    "id": "herramientas_freelance",
+    "nombre": "Herramientas SaaS para freelancers hispanohablantes",
+    "score": 14,
+    "viabilidad": "BAJA",
+    "precio_medio_eur": 0,
+    "precios_rango": [],
+    "demanda": 1,
+    "gap_mercado": 0,
+    "competidores": [],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 13,
+    "ts": "2026-05-12 20:40"
+  }
+}

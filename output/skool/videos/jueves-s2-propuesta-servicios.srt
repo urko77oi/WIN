@@ -1,0 +1,183 @@
+1
+00:00:00,000 --> 00:00:04,500
+Una propuesta de servicios mal hecha te puede costar el cliente
+
+2
+00:00:04,500 --> 00:00:09,000
+aunque hayas hecho una reunion perfecta.
+
+3
+00:00:09,000 --> 00:00:13,500
+Hoy te enseño la estructura exacta que cierra ventas.
+
+4
+00:00:13,500 --> 00:00:19,100
+La mayoria de autonomos manda una propuesta que es basicamente una lista de precios.
+
+5
+00:00:19,100 --> 00:00:24,300
+El cliente la ve, la compara con otras, y elige el mas barato.
+
+6
+00:00:24,300 --> 00:00:28,800
+Porque no le diste otra razon para elegirte.
+
+7
+00:00:28,800 --> 00:00:33,299
+Una propuesta que cierra ventas no es una lista de precios.
+
+8
+00:00:33,299 --> 00:00:37,799
+Es un documento que reafirma que entiendes el problema del cliente,
+
+9
+00:00:37,799 --> 00:00:43,000
+que tienes la solucion exacta, y que eres la persona obvia para ejecutarla.
+
+10
+00:00:43,000 --> 00:00:47,500
+La estructura tiene 5 partes.
+
+11
+00:00:47,500 --> 00:00:52,000
+PARTE 1: EL PROBLEMA DEL CLIENTE (en sus propias palabras)
+
+12
+00:00:52,000 --> 00:00:56,500
+Empieza por lo que te contaron en la reunion. Literalmente.
+
+13
+00:00:56,500 --> 00:01:01,000
+"En nuestra conversacion del martes me comentaste que vuestra pagina web
+
+14
+00:01:01,000 --> 00:01:07,000
+no esta generando leads y que llevas 6 meses sin conseguir un cliente por internet."
+
+15
+00:01:07,000 --> 00:01:12,599
+Cuando el cliente lee sus propios problemas en tu propuesta, siente que le escuchas.
+
+16
+00:01:12,599 --> 00:01:17,099
+Y confiar en alguien que te escucha es mucho mas facil.
+
+17
+00:01:17,099 --> 00:01:22,299
+PARTE 2: EL COSTE DEL PROBLEMA (lo que les esta costando no resolverlo)
+
+18
+00:01:22,299 --> 00:01:28,299
+Esto es lo que diferencia las propuestas que se contratan de las que se archivan.
+
+19
+00:01:28,299 --> 00:01:33,899
+Ayuda al cliente a visualizar lo que esta perdiendo cada mes que no actua.
+
+20
+00:01:33,899 --> 00:01:38,399
+"Cada mes sin una web optimizada son aproximadamente X clientes potenciales
+
+21
+00:01:38,399 --> 00:01:45,599
+que van a la competencia. A tu ticket medio de Y euros, eso son Z euros al mes."
+
+22
+00:01:45,599 --> 00:01:51,599
+Si pones los numeros reales, el precio de tu servicio deja de parecer un gasto.
+
+23
+00:01:51,599 --> 00:01:56,099
+Parece una inversion con retorno claro.
+
+24
+00:01:56,099 --> 00:02:00,599
+PARTE 3: TU SOLUCION ESPECIFICA
+
+25
+00:02:00,599 --> 00:02:06,199
+Aqui va lo que vas a hacer. Pero no como una lista de tareas.
+
+26
+00:02:06,199 --> 00:02:10,699
+Como un proceso con logica.
+
+27
+00:02:10,699 --> 00:02:15,199
+"En los primeros 15 dias haremos X. Esto resuelve Y.
+
+28
+00:02:15,199 --> 00:02:19,699
+En el mes 1 implementaremos Z. El resultado esperado es W."
+
+29
+00:02:19,699 --> 00:02:24,199
+El cliente tiene que poder visualizar el camino completo.
+
+30
+00:02:24,199 --> 00:02:28,699
+PARTE 4: POR QUE TU
+
+31
+00:02:28,699 --> 00:02:33,199
+No lo pongas como autobombo. Ponlo como tranquilidad para el cliente.
+
+32
+00:02:33,199 --> 00:02:37,699
+Caso de exito parecido. Una cifra concreta de resultado. Un testimonio.
+
+33
+00:02:37,699 --> 00:02:42,500
+Si no tienes historial, pon tu proceso. La metodologia detallada inspira confianza
+
+34
+00:02:42,500 --> 00:02:47,000
+aunque no tengas casos de exito todavia.
+
+35
+00:02:47,000 --> 00:02:51,500
+PARTE 5: INVERSION Y SIGUIENTES PASOS
+
+36
+00:02:51,500 --> 00:02:56,000
+Al precio llamale "inversion", no "coste". Las palabras importan.
+
+37
+00:02:56,000 --> 00:03:00,500
+Da dos o tres opciones: basico, estandar, premium.
+
+38
+00:03:00,500 --> 00:03:05,300
+Los clientes con opciones se quedan. Los clientes con precio unico, comparan.
+
+39
+00:03:05,300 --> 00:03:09,800
+Y termina con los siguientes pasos concretos.
+
+40
+00:03:09,800 --> 00:03:14,300
+No "dimelo si te interesa". Eso es pasivo.
+
+41
+00:03:14,300 --> 00:03:19,500
+"El siguiente paso es una llamada de 20 minutos el jueves o viernes.
+
+42
+00:03:19,500 --> 00:03:24,000
+Que te viene mejor?"
+
+43
+00:03:24,000 --> 00:03:28,500
+CIERRE:
+
+44
+00:03:28,500 --> 00:03:33,699
+Una buena propuesta no es una obra de arte. Es un documento funcional
+
+45
+00:03:33,699 --> 00:03:39,299
+que responde a la pregunta del cliente: por que tu y por que ahora.
+
+46
+00:03:39,299 --> 00:03:44,099
+En la comunidad os dejo hoy la plantilla completa lista para personalizar.

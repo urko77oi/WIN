@@ -1,241 +1,142 @@
-"""Implementación de Durruti, el CEO Operativo.
+"""Durruti — CEO Operativo. Orquesta con resultados reales.
 
-Único interlocutor con el humano. Recibe órdenes, las clasifica, delega en
-Scout o Domenech, supervisa, pide aprobaciones y reporta.
-
-En Fase 0 esta clase orquesta el flujo end-to-end con respuestas mock.
-En Fase 1+ se ampliará con: telegram, parsing de órdenes más rico,
-catálogo dinámico, etc.
+Ahora usa Groq directamente para la conversacion libre y delega trabajo
+real a Scout y Domenech (que tienen tools de verdad).
 """
 from __future__ import annotations
 
+import os
 from dataclasses import dataclass
+
 from agents.domenech.domenech import Domenech
+from agents.emma.emma import Emma
+from agents.guion.guion import Guion
+from agents.pixel.pixel import Pixel
 from agents.scout.scout import Scout
-from shared import llm_client, memory
+from agents.viral.viral import Viral
+from shared import memory
 from shared.agent_loader import cargar_prompt_de
+from shared.agent_runner import ejecutar_agente
+from shared.herramientas import TOOLS_DURRUTI
 from shared.human_channel import HumanChannel, canal_por_defecto
 from shared.logger import log_de
-
 
 _AGENTE = "durruti"
 log = log_de(_AGENTE)
 
-# Archivos .md que componen el prompt de Durruti (en este orden).
-_DURRUTI_PROMPT_FILES: list[str] = [
-    "identity.md",
-    "system_prompt.md",
-    "tools.md",
-    "playbook.md",
-    "order_catalog.md",
-]
+_SYSTEM = """Eres Durruti, CEO Operativo de FORRARSE. Hablas en castellano.
+
+CARACTER: Directo, inteligente, con criterio propio. Tuteas al Founder. Humor seco ocasional.
+
+HERRAMIENTAS para status y coordinacion:
+- listar_informes: ve los informes que Scout ha guardado.
+- leer_informe: lee un informe concreto.
+- listar_tareas: ve las tareas pendientes.
+- guardar_tarea: guarda una tarea para el equipo.
+- listar_output: ve los archivos que Domenech ha creado.
+
+REGLAS: maximo 3-4 frases en conversacion libre. Sin markdown en respuestas de voz. Directo al grano."""
 
 
 @dataclass
 class Resultado:
-    """Resultado consolidado que Durruti devuelve tras procesar una orden."""
     texto_para_humano: str
     proyecto_slug: str | None = None
 
 
-def _clasificar_orden(orden: str) -> str:
-    """Clasificación heurística simple por palabras clave.
-
-    En Fase 1+ esto lo hará el LLM. En Fase 0 nos basta con keywords para
-    que el flujo sea predecible y barato.
-    """
+def _clasificar(orden: str) -> str:
     o = orden.lower()
-    if "audita" in o or "auditar" in o:
-        return "auditar_competencia"
-    if any(k in o for k in ("investiga", "research", "analiza", "estudia", "competencia", "nicho", "palabras clave")):
-        return "investigar_nicho"
-    if any(k in o for k in ("crea landing", "haz landing", "monta landing", "web", "landing")):
-        return "crear_landing"
-    if any(k in o for k in ("escribe", "genera contenido", "post", "hilo", "email", "copy")):
-        return "generar_contenido"
-    if "status" in o or "estado" in o or "como vas" in o:
+    if any(k in o for k in ("investiga", "analiza", "nicho", "mercado", "competenci", "audita")):
+        return "investigar"
+    if any(k in o for k in ("crea landing", "haz landing", "monta landing", "landing", "web", "pagina")):
+        return "landing"
+    if any(k in o for k in ("escribe", "genera contenido", "post", "email", "copy", "hilo")):
+        return "contenido"
+    if any(k in o for k in ("status", "estado", "como va", "que han hecho", "que trabajo")):
         return "status"
-    if "crea proyecto" in o or "nuevo proyecto" in o:
-        return "crear_proyecto"
-    return "desconocida"
+    return "libre"
 
 
 class Durruti:
-    """CEO Operativo. Punto de entrada del sistema."""
-
     def __init__(self, canal: HumanChannel | None = None) -> None:
         self.canal = canal or canal_por_defecto()
-        self.system_prompt = cargar_prompt_de(_AGENTE, _DURRUTI_PROMPT_FILES)
-        self.scout = Scout()
+        self.system_prompt = _SYSTEM
+        self.scout    = Scout()
         self.domenech = Domenech()
+        self.emma     = Emma()
+        self.pixel    = Pixel()
+        self.guion    = Guion()
+        self.viral    = Viral()
         log.info("Durruti listo. Canal: " + self.canal.__class__.__name__)
 
-    # ─────────────────────────────────────────────────────────────────
-    # API pública
-    # ─────────────────────────────────────────────────────────────────
-
     def procesar(self, orden: str) -> Resultado:
-        """Procesa una orden del humano de principio a fin.
+        log.info(f"Orden: {orden!r}")
+        tipo = _clasificar(orden)
+        log.info(f"Tipo: {tipo}")
 
-        Retorna `Resultado`. El texto ya ha sido también enviado al canal humano.
-        """
-        log.info(f"Orden recibida: {orden!r}")
-        tipo = _clasificar_orden(orden)
-        log.info(f"Tipo clasificado: {tipo}")
-
+        if tipo == "investigar":
+            return self._investigar(orden)
+        if tipo == "landing":
+            return self._landing(orden)
+        if tipo == "contenido":
+            return self._contenido(orden)
         if tipo == "status":
-            return self._handle_status()
-        if tipo == "investigar_nicho":
-            return self._handle_investigar(orden)
-        if tipo == "auditar_competencia":
-            return self._handle_auditar_competencia(orden)
-        if tipo == "crear_landing":
-            return self._handle_crear_landing(orden)
-        if tipo == "generar_contenido":
-            return self._handle_generar_contenido(orden)
-        if tipo == "crear_proyecto":
-            return self._handle_crear_proyecto(orden)
-        return self._handle_desconocida(orden)
+            return self._status(orden)
+        return self._libre(orden)
 
-    # ─────────────────────────────────────────────────────────────────
-    # Handlers
-    # ─────────────────────────────────────────────────────────────────
-
-    def _handle_status(self) -> Resultado:
-        from shared import cost_tracker
-
-        proyectos = memory.listar_proyectos()
-        coste_dia = cost_tracker.coste_acumulado("dia")
-        coste_mes = cost_tracker.coste_acumulado("mes")
-        modo = llm_client.modo_actual()
-
-        lineas = [
-            f"**Modo LLM:** `{modo}`",
-            f"**Proyectos activos:** {len(proyectos)}",
-        ]
-        for p in proyectos[:10]:
-            lineas.append(f"- `{p.slug}` — {p.nombre} (act: {p.actualizado[:10]})")
-        lineas.append("")
-        lineas.append(f"**Coste API hoy:** {coste_dia:.4f} €")
-        lineas.append(f"**Coste API mes:** {coste_mes:.4f} €")
-
-        texto = "\n".join(lineas)
-        self.canal.notificar(texto)
-        return Resultado(texto_para_humano=texto)
-
-    def _handle_investigar(self, orden: str) -> Resultado:
-        proyecto = memory.crear_proyecto(
-            nombre=f"Investigación: {orden[:60]}",
-            descripcion=orden,
-        )
-        memory.anotar_en_bitacora(proyecto.slug, f"Durruti delega investigación al Scout (WF-1).")
+    def _investigar(self, orden: str) -> Resultado:
+        proyecto = memory.crear_proyecto(nombre=f"Investigacion: {orden[:60]}", descripcion=orden)
+        memory.anotar_en_bitacora(proyecto.slug, "Scout investiga con herramientas reales.")
+        self.canal.notificar("Scout esta investigando... (puede tardar 1-2 min)")
         informe = self.scout.investigar(orden)
-        memory.anotar_en_bitacora(proyecto.slug, "Scout entrega memo con triple scoring.")
+        memory.anotar_en_bitacora(proyecto.slug, "Scout entrego informe.")
+        self.canal.notificar(informe)
+        return Resultado(texto_para_humano=informe, proyecto_slug=proyecto.slug)
 
-        texto = self._llamar_consolidacion(
-            orden=orden,
-            entrega_de_especialista=informe,
-            tipo_entrega="memo del Scout (con triple scoring)",
-        )
-        self.canal.notificar(texto)
-        return Resultado(texto_para_humano=texto, proyecto_slug=proyecto.slug)
+    def _landing(self, orden: str) -> Resultado:
+        proyecto = memory.crear_proyecto(nombre=f"Landing: {orden[:60]}", descripcion=orden)
+        self.canal.notificar("Domenech esta construyendo la landing... (puede tardar 1-2 min)")
+        resultado = self.domenech.proponer_landing(orden)
+        memory.anotar_en_bitacora(proyecto.slug, "Domenech genero archivos en output/.")
+        self.canal.notificar(resultado)
+        return Resultado(texto_para_humano=resultado, proyecto_slug=proyecto.slug)
 
-    def _handle_auditar_competencia(self, orden: str) -> Resultado:
-        objetivo = orden.lower().replace("audita", "").replace("auditar", "").strip(": -")
-        objetivo = objetivo or orden
-        proyecto = memory.crear_proyecto(
-            nombre=f"Auditoría: {objetivo[:60]}",
-            descripcion=orden,
-        )
-        memory.anotar_en_bitacora(proyecto.slug, "Durruti delega auditoría al Scout.")
-        informe = self.scout.auditar_competidor(objetivo)
-        memory.anotar_en_bitacora(proyecto.slug, "Scout entrega informe de auditoría.")
+    def _contenido(self, orden: str) -> Resultado:
+        self.canal.notificar("Domenech generando contenido...")
+        resultado = self.domenech.generar_contenido(orden)
+        self.canal.notificar(resultado)
+        return Resultado(texto_para_humano=resultado)
 
-        texto = self._llamar_consolidacion(
-            orden=orden,
-            entrega_de_especialista=informe,
-            tipo_entrega="informe de auditoría del Scout",
-        )
-        self.canal.notificar(texto)
-        return Resultado(texto_para_humano=texto, proyecto_slug=proyecto.slug)
-
-    def _handle_crear_landing(self, orden: str) -> Resultado:
-        proyecto = memory.crear_proyecto(
-            nombre=f"Landing: {orden[:60]}",
-            descripcion=orden,
-        )
-        memory.anotar_en_bitacora(proyecto.slug, "Durruti delega creación de landing en Domenech (Builder).")
-        propuesta = self.domenech.proponer_landing(orden)
-        memory.anotar_en_bitacora(proyecto.slug, "Domenech entrega propuesta de landing con ADR de stack.")
-
-        texto = self._llamar_consolidacion(
-            orden=orden,
-            entrega_de_especialista=propuesta,
-            tipo_entrega="propuesta de landing de Domenech (con ADR de stack)",
-        )
-        self.canal.notificar(texto)
-        return Resultado(texto_para_humano=texto, proyecto_slug=proyecto.slug)
-
-    def _handle_generar_contenido(self, orden: str) -> Resultado:
-        propuesta = self.domenech.generar_contenido(orden)
-        texto = self._llamar_consolidacion(
-            orden=orden,
-            entrega_de_especialista=propuesta,
-            tipo_entrega="contenido generado por Domenech",
-        )
-        self.canal.notificar(texto)
-        return Resultado(texto_para_humano=texto)
-
-    def _handle_crear_proyecto(self, orden: str) -> Resultado:
-        nombre = orden.replace("crea proyecto", "").replace("nuevo proyecto", "").strip(": -")
-        if not nombre:
-            nombre = "Sin nombre"
-        proyecto = memory.crear_proyecto(nombre=nombre, descripcion=orden)
-        texto = (
-            f"Proyecto **{proyecto.nombre}** creado.\n"
-            f"- Slug: `{proyecto.slug}`\n"
-            f"- Archivo: `{proyecto.archivo_md.relative_to(PROJECT_ROOT)}`"
-        )
-        self.canal.notificar(texto)
-        return Resultado(texto_para_humano=texto, proyecto_slug=proyecto.slug)
-
-    def _handle_desconocida(self, orden: str) -> Resultado:
-        texto = (
-            "No tengo una orden-tipo que encaje exactamente con tu mensaje.\n\n"
-            "Catálogo actual: investigar_nicho, crear_landing, generar_contenido, "
-            "crear_proyecto, status.\n\n"
-            f"Tu mensaje: «{orden[:200]}»\n\n"
-            "¿Lo reformulas o quieres que lo trate como una conversación libre con Durruti?"
-        )
-        self.canal.notificar(texto)
-        return Resultado(texto_para_humano=texto)
-
-    # ─────────────────────────────────────────────────────────────────
-    # Helpers
-    # ─────────────────────────────────────────────────────────────────
-
-    def _llamar_consolidacion(
-        self,
-        *,
-        orden: str,
-        entrega_de_especialista: str,
-        tipo_entrega: str,
-    ) -> str:
-        """Pide al LLM (en modo del agente Durruti) que consolide la entrega.
-
-        En modo mock devuelve respuesta plantilla coherente.
-        """
-        mensaje = (
-            f"Orden del humano: «{orden}»\n\n"
-            f"He recibido la siguiente {tipo_entrega}:\n\n"
-            f"---\n{entrega_de_especialista}\n---\n\n"
-            f"Consolida la respuesta para el humano siguiendo tu patrón "
-            f"(Qué hice / Qué encontré / Qué propongo / Qué necesito)."
-        )
-        resp = llm_client.llamar(
-            agente=_AGENTE,
+    def _status(self, orden: str) -> Resultado:
+        texto = ejecutar_agente(
+            nombre=_AGENTE,
             system_prompt=self.system_prompt,
-            mensaje_usuario=mensaje,
-            orden=orden[:120],
+            mensaje=f"El Founder pregunta: «{orden}». Usa tus herramientas para dar un status real del equipo.",
+            tools=TOOLS_DURRUTI,
+            max_iter=4,
         )
-        return resp.texto
+        self.canal.notificar(texto)
+        return Resultado(texto_para_humano=texto)
+
+    def _libre(self, orden: str) -> Resultado:
+        """Conversacion libre — sin tools, respuesta directa."""
+        modo = os.getenv("LLM_MODE", "mock").strip().lower()
+        if modo != "real":
+            texto = (
+                "[MOCK · Durruti] Entendido. "
+                "Activa LLM_MODE=real con creditos Anthropic para conversacion real."
+            )
+            self.canal.notificar(texto)
+            return Resultado(texto_para_humano=texto)
+
+        from anthropic import Anthropic
+        client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+        resp = client.messages.create(
+            model="claude-sonnet-4-6",
+            max_tokens=400,
+            system=self.system_prompt,
+            messages=[{"role": "user", "content": orden}],
+        )
+        texto = resp.content[0].text.strip()
+        self.canal.notificar(texto)
+        return Resultado(texto_para_humano=texto)

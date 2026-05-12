@@ -18,8 +18,11 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from rich.console import Console  # noqa: E402
 from rich.panel import Panel  # noqa: E402
 
+from dotenv import load_dotenv
+load_dotenv(PROJECT_ROOT / ".env")
+
 from agents.durruti import Durruti  # noqa: E402
-from shared import llm_client  # noqa: E402
+from shared.human_channel import CLIChannel  # noqa: E402
 from shared.logger import log_de  # noqa: E402
 
 log = log_de("start")
@@ -27,11 +30,15 @@ console = Console()
 
 
 def _banner() -> None:
-    modo = llm_client.modo_actual()
-    color = "yellow" if modo == "mock" else "green"
+    import os
+    modo = os.getenv("LLM_MODE", "mock").strip().lower()
+    if modo == "real":
+        backend = "[green]Anthropic Claude (real)[/green]"
+    else:
+        backend = "[yellow]Mock (sin creditos — cambia LLM_MODE=real en .env)[/yellow]"
     texto = (
         f"[bold]Durruti[/bold] — CEO Operativo\n"
-        f"Modo LLM: [{color}]{modo}[/{color}]\n"
+        f"Backend: {backend}\n"
         f"Comandos: escribe tu orden en español, o 'salir' / 'exit' para terminar."
     )
     console.print(Panel(texto, border_style="cyan"))
@@ -39,7 +46,7 @@ def _banner() -> None:
 
 def main() -> int:
     _banner()
-    durruti = Durruti()
+    durruti = Durruti(canal=CLIChannel())
 
     while True:
         try:
