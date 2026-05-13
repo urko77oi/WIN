@@ -1,6 +1,6 @@
 # Informe de Oportunidades de Negocio
 
-Ultima actualizacion: 2026-05-13 22:16  |  Nichos investigados: 9/10
+Ultima actualizacion: 2026-05-13 22:51  |  Nichos investigados: 10/10
 
 ---
 
@@ -16,7 +16,8 @@ Ultima actualizacion: 2026-05-13 22:16  |  Nichos investigados: 9/10
 | 6 | Consultoria IA para pymes y autonomos | 65/100 | ALTA | – | .com, .es, .io |
 | 7 | Cursos online para profesionales hispanohablantes | 40/100 | MEDIA | 21 EUR | .io |
 | 8 | Comunidades de pago online para profesionales espanoles | 37/100 | MEDIA | – | .com, .es, .io |
-| 9 | Productos digitales descargables para autonomos | 23/100 | BAJA | 9 EUR | .com, .es, .io |
+| 9 | Tiendas online de nicho con baja competencia | 37/100 | MEDIA | – | .com, .es, .io |
+| 10 | Productos digitales descargables para autonomos | 23/100 | BAJA | 9 EUR | .com, .es, .io |
 
 ---
 
@@ -94,6 +95,15 @@ Ultima actualizacion: 2026-05-13 22:16  |  Nichos investigados: 9/10
 - **Resultados analizados:** 18
 - **Investigado:** 2026-05-13 22:16
 
+### Tiendas online de nicho con baja competencia  ·  Score 37/100  [MEDIA]
+
+- **Precio de mercado:** 0 EUR
+- **Señales de demanda:** 4  |  **Gap de mercado:** 5
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** no detectados
+- **Resultados analizados:** 13
+- **Investigado:** 2026-05-13 22:51
+
 ### Productos digitales descargables para autonomos  ·  Score 23/100  [BAJA]
 
 - **Precio de mercado:** 9 EUR
@@ -124,4 +134,4 @@ Ultima actualizacion: 2026-05-13 22:16  |  Nichos investigados: 9/10
 
 ---
 
-*Generado automaticamente por el equipo Agente007 · 2026-05-13 22:16*
+*Generado automaticamente por el equipo Agente007 · 2026-05-13 22:51*
