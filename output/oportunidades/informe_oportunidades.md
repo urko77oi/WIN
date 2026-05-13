@@ -1,6 +1,6 @@
 # Informe de Oportunidades de Negocio
 
-Ultima actualizacion: 2026-05-13 18:38  |  Nichos investigados: 9/10
+Ultima actualizacion: 2026-05-13 19:11  |  Nichos investigados: 10/10
 
 ---
 
@@ -15,8 +15,9 @@ Ultima actualizacion: 2026-05-13 18:38  |  Nichos investigados: 9/10
 | 5 | Herramientas SaaS para freelancers hispanohablantes | 64/100 | MEDIA | – | .com, .es, .io |
 | 6 | Servicios de contenido digital para pymes espanolas | 39/100 | MEDIA | – | .com, .es, .io |
 | 7 | Cursos online para profesionales hispanohablantes | 34/100 | BAJA | 12 EUR | .io |
-| 8 | Productos digitales descargables para autonomos | 27/100 | BAJA | – | .com, .es, .io |
-| 9 | Comunidades de pago online para profesionales espanoles | 10/100 | BAJA | – | .com, .es, .io |
+| 8 | Tiendas online de nicho con baja competencia | 33/100 | BAJA | – | .com, .es, .io |
+| 9 | Productos digitales descargables para autonomos | 27/100 | BAJA | – | .com, .es, .io |
+| 10 | Comunidades de pago online para profesionales espanoles | 10/100 | BAJA | – | .com, .es, .io |
 
 ---
 
@@ -85,6 +86,15 @@ Ultima actualizacion: 2026-05-13 18:38  |  Nichos investigados: 9/10
 - **Resultados analizados:** 17
 - **Investigado:** 2026-05-13 17:54
 
+### Tiendas online de nicho con baja competencia  ·  Score 33/100  [BAJA]
+
+- **Precio de mercado:** 0 EUR
+- **Señales de demanda:** 4  |  **Gap de mercado:** 4
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** a3
+- **Resultados analizados:** 13
+- **Investigado:** 2026-05-13 19:11
+
 ### Productos digitales descargables para autonomos  ·  Score 27/100  [BAJA]
 
 - **Precio de mercado:** 0 EUR
@@ -124,4 +134,4 @@ Ultima actualizacion: 2026-05-13 18:38  |  Nichos investigados: 9/10
 
 ---
 
-*Generado automaticamente por el equipo Agente007 · 2026-05-13 18:38*
+*Generado automaticamente por el equipo Agente007 · 2026-05-13 19:11*
