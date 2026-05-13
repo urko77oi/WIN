@@ -1,6 +1,6 @@
 # Informe de Oportunidades de Negocio
 
-Ultima actualizacion: 2026-05-13 20:17  |  Nichos investigados: 9/10
+Ultima actualizacion: 2026-05-13 20:38  |  Nichos investigados: 10/10
 
 ---
 
@@ -14,9 +14,10 @@ Ultima actualizacion: 2026-05-13 20:17  |  Nichos investigados: 9/10
 | 4 | Coaching y mentoría para autónomos y emprendedores | 67/100 | ALTA | 14 EUR | .com, .es, .io |
 | 5 | Herramientas SaaS para freelancers hispanohablantes | 65/100 | ALTA | – | .com, .es, .io |
 | 6 | Productos digitales descargables para autonomos | 62/100 | MEDIA | 170 EUR | .com, .es, .io |
-| 7 | Cursos online para profesionales hispanohablantes | 34/100 | BAJA | 12 EUR | .io |
-| 8 | Servicios de contenido digital para pymes espanolas | 21/100 | BAJA | – | .com, .es, .io |
-| 9 | Comunidades de pago online para profesionales espanoles | 14/100 | BAJA | – | .com, .es, .io |
+| 7 | Tiendas online de nicho con baja competencia | 38/100 | MEDIA | – | .com, .es, .io |
+| 8 | Cursos online para profesionales hispanohablantes | 34/100 | BAJA | 12 EUR | .io |
+| 9 | Servicios de contenido digital para pymes espanolas | 21/100 | BAJA | – | .com, .es, .io |
+| 10 | Comunidades de pago online para profesionales espanoles | 14/100 | BAJA | – | .com, .es, .io |
 
 ---
 
@@ -76,6 +77,15 @@ Ultima actualizacion: 2026-05-13 20:17  |  Nichos investigados: 9/10
 - **Resultados analizados:** 17
 - **Investigado:** 2026-05-13 19:55
 
+### Tiendas online de nicho con baja competencia  ·  Score 38/100  [MEDIA]
+
+- **Precio de mercado:** 0 EUR
+- **Señales de demanda:** 4  |  **Gap de mercado:** 5
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** a3
+- **Resultados analizados:** 14
+- **Investigado:** 2026-05-13 20:38
+
 ### Cursos online para profesionales hispanohablantes  ·  Score 34/100  [BAJA]
 
 - **Precio de mercado:** 12 EUR (rango: 10–15 EUR)
@@ -124,4 +134,4 @@ Ultima actualizacion: 2026-05-13 20:17  |  Nichos investigados: 9/10
 
 ---
 
-*Generado automaticamente por el equipo Agente007 · 2026-05-13 20:17*
+*Generado automaticamente por el equipo Agente007 · 2026-05-13 20:38*
