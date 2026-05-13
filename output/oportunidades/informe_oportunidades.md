@@ -1,6 +1,6 @@
 # Informe de Oportunidades de Negocio
 
-Ultima actualizacion: 2026-05-13 22:51  |  Nichos investigados: 10/10
+Ultima actualizacion: 2026-05-13 23:13  |  Nichos investigados: 3/10
 
 ---
 
@@ -8,130 +8,55 @@ Ultima actualizacion: 2026-05-13 22:51  |  Nichos investigados: 10/10
 
 | # | Oportunidad | Score | Viabilidad | Precio medio | Dominios libres |
 |---|-------------|-------|------------|--------------|-----------------|
-| 1 | Servicios de traduccion y localizacion para empresas | 80/100 | ALTA | 503 EUR | .com, .es, .io |
-| 2 | Servicios de contenido digital para pymes espanolas | 75/100 | ALTA | 239 EUR | .com, .es, .io |
-| 3 | Software contabilidad para autonomos espana | 73/100 | ALTA | 59 EUR | .es, .io |
-| 4 | Coaching y mentoría para autónomos y emprendedores | 67/100 | ALTA | 14 EUR | .com, .es, .io |
-| 5 | Herramientas SaaS para freelancers hispanohablantes | 65/100 | ALTA | – | .com, .es, .io |
-| 6 | Consultoria IA para pymes y autonomos | 65/100 | ALTA | – | .com, .es, .io |
-| 7 | Cursos online para profesionales hispanohablantes | 40/100 | MEDIA | 21 EUR | .io |
-| 8 | Comunidades de pago online para profesionales espanoles | 37/100 | MEDIA | – | .com, .es, .io |
-| 9 | Tiendas online de nicho con baja competencia | 37/100 | MEDIA | – | .com, .es, .io |
-| 10 | Productos digitales descargables para autonomos | 23/100 | BAJA | 9 EUR | .com, .es, .io |
+| 1 | Software contabilidad para autonomos espana | 85/100 | ALTA | 66 EUR | .es, .io |
+| 2 | Cursos online para profesionales hispanohablantes | 40/100 | MEDIA | 21 EUR | .io |
+| 3 | Herramientas SaaS para freelancers hispanohablantes | 17/100 | BAJA | – | .com, .es, .io |
 
 ---
 
 ## Detalle por oportunidad
 
-### Servicios de traduccion y localizacion para empresas  ·  Score 80/100  [ALTA]
+### Software contabilidad para autonomos espana  ·  Score 85/100  [ALTA]
 
-- **Precio de mercado:** 503 EUR (rango: 6–30 EUR)
-- **Señales de demanda:** 133  |  **Gap de mercado:** 1
-- **Dominios disponibles:** .com, .es, .io
-- **Competidores detectados:** factura, wordpress
-- **Resultados analizados:** 16
-- **Investigado:** 2026-05-13 22:16
-
-### Servicios de contenido digital para pymes espanolas  ·  Score 75/100  [ALTA]
-
-- **Precio de mercado:** 239 EUR (rango: 13–283 EUR)
-- **Señales de demanda:** 34  |  **Gap de mercado:** 0
-- **Dominios disponibles:** .com, .es, .io
-- **Competidores detectados:** no detectados
-- **Resultados analizados:** 17
-- **Investigado:** 2026-05-13 21:22
-
-### Software contabilidad para autonomos espana  ·  Score 73/100  [ALTA]
-
-- **Precio de mercado:** 59 EUR
-- **Señales de demanda:** 13  |  **Gap de mercado:** 10
+- **Precio de mercado:** 66 EUR (rango: 7–88 EUR)
+- **Señales de demanda:** 28  |  **Gap de mercado:** 2
 - **Dominios disponibles:** .es, .io
-- **Competidores detectados:** holded, factura, wordpress
-- **Resultados analizados:** 18
-- **Investigado:** 2026-05-13 21:01
-
-### Coaching y mentoría para autónomos y emprendedores  ·  Score 67/100  [ALTA]
-
-- **Precio de mercado:** 14 EUR (rango: 5–12 EUR)
-- **Señales de demanda:** 75  |  **Gap de mercado:** 0
-- **Dominios disponibles:** .com, .es, .io
-- **Competidores detectados:** factura
-- **Resultados analizados:** 13
-- **Investigado:** 2026-05-13 22:16
-
-### Herramientas SaaS para freelancers hispanohablantes  ·  Score 65/100  [ALTA]
-
-- **Precio de mercado:** 0 EUR
-- **Señales de demanda:** 23  |  **Gap de mercado:** 6
-- **Dominios disponibles:** .com, .es, .io
-- **Competidores detectados:** factura, sage
-- **Resultados analizados:** 15
-- **Investigado:** 2026-05-13 21:01
-
-### Consultoria IA para pymes y autonomos  ·  Score 65/100  [ALTA]
-
-- **Precio de mercado:** 0 EUR
-- **Señales de demanda:** 19  |  **Gap de mercado:** 6
-- **Dominios disponibles:** .com, .es, .io
-- **Competidores detectados:** factura, a3
-- **Resultados analizados:** 16
-- **Investigado:** 2026-05-13 21:22
+- **Competidores detectados:** holded, factura, contasimple
+- **Resultados analizados:** 14
+- **Investigado:** 2026-05-13 23:13
 
 ### Cursos online para profesionales hispanohablantes  ·  Score 40/100  [MEDIA]
 
 - **Precio de mercado:** 21 EUR (rango: 9–50 EUR)
 - **Señales de demanda:** 8  |  **Gap de mercado:** 0
 - **Dominios disponibles:** .io
-- **Competidores detectados:** factura, hotmart
-- **Resultados analizados:** 15
-- **Investigado:** 2026-05-13 21:01
+- **Competidores detectados:** factura, sage, hotmart
+- **Resultados analizados:** 17
+- **Investigado:** 2026-05-13 23:13
 
-### Comunidades de pago online para profesionales espanoles  ·  Score 37/100  [MEDIA]
-
-- **Precio de mercado:** 0 EUR
-- **Señales de demanda:** 14  |  **Gap de mercado:** 1
-- **Dominios disponibles:** .com, .es, .io
-- **Competidores detectados:** skool, patreon, substack
-- **Resultados analizados:** 18
-- **Investigado:** 2026-05-13 22:16
-
-### Tiendas online de nicho con baja competencia  ·  Score 37/100  [MEDIA]
+### Herramientas SaaS para freelancers hispanohablantes  ·  Score 17/100  [BAJA]
 
 - **Precio de mercado:** 0 EUR
-- **Señales de demanda:** 4  |  **Gap de mercado:** 5
+- **Señales de demanda:** 6  |  **Gap de mercado:** 0
 - **Dominios disponibles:** .com, .es, .io
 - **Competidores detectados:** no detectados
-- **Resultados analizados:** 13
-- **Investigado:** 2026-05-13 22:51
-
-### Productos digitales descargables para autonomos  ·  Score 23/100  [BAJA]
-
-- **Precio de mercado:** 9 EUR
-- **Señales de demanda:** 4  |  **Gap de mercado:** 0
-- **Dominios disponibles:** .com, .es, .io
-- **Competidores detectados:** shopify
-- **Resultados analizados:** 16
-- **Investigado:** 2026-05-13 21:22
+- **Resultados analizados:** 14
+- **Investigado:** 2026-05-13 23:13
 
 ---
 
 ## Top oportunidades — Proximos pasos sugeridos
 
-**Servicios de traduccion y localizacion para empresas** (score 80)
-- Precio objetivo: 30 EUR/mes o 503 EUR/hora
-- Dominio: registrar .com
-- Accion: landing page de validacion + lista de espera
-
-**Servicios de contenido digital para pymes espanolas** (score 75)
-- Precio objetivo: 283 EUR/mes o 239 EUR/hora
-- Dominio: registrar .com
-- Accion: landing page de validacion + lista de espera
-
-**Software contabilidad para autonomos espana** (score 73)
-- Precio objetivo: 59 EUR/mes o 59 EUR/hora
+**Software contabilidad para autonomos espana** (score 85)
+- Precio objetivo: 88 EUR/mes o 66 EUR/hora
 - Dominio: registrar .es
+- Accion: landing page de validacion + lista de espera
+
+**Cursos online para profesionales hispanohablantes** (score 40)
+- Precio objetivo: 50 EUR/mes o 21 EUR/hora
+- Dominio: registrar .io
 - Accion: landing page de validacion + lista de espera
 
 ---
 
-*Generado automaticamente por el equipo Agente007 · 2026-05-13 22:51*
+*Generado automaticamente por el equipo Agente007 · 2026-05-13 23:13*
