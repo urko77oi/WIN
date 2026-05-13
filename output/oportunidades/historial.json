@@ -64,5 +64,62 @@
     ],
     "n_resultados": 15,
     "ts": "2026-05-13 17:54"
+  },
+  "contenido_digital_pymes": {
+    "id": "contenido_digital_pymes",
+    "nombre": "Servicios de contenido digital para pymes espanolas",
+    "score": 39,
+    "viabilidad": "MEDIA",
+    "precio_medio_eur": 0,
+    "precios_rango": [],
+    "demanda": 23,
+    "gap_mercado": 0,
+    "competidores": [],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 12,
+    "ts": "2026-05-13 18:16"
+  },
+  "consultoria_ia_pymes": {
+    "id": "consultoria_ia_pymes",
+    "nombre": "Consultoria IA para pymes y autonomos",
+    "score": 65,
+    "viabilidad": "ALTA",
+    "precio_medio_eur": 0,
+    "precios_rango": [],
+    "demanda": 20,
+    "gap_mercado": 6,
+    "competidores": [
+      "factura",
+      "a3"
+    ],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 16,
+    "ts": "2026-05-13 18:16"
+  },
+  "productos_digitales_autonomos": {
+    "id": "productos_digitales_autonomos",
+    "nombre": "Productos digitales descargables para autonomos",
+    "score": 27,
+    "viabilidad": "BAJA",
+    "precio_medio_eur": 0,
+    "precios_rango": [],
+    "demanda": 11,
+    "gap_mercado": 0,
+    "competidores": [],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 14,
+    "ts": "2026-05-13 18:16"
   }
 }
