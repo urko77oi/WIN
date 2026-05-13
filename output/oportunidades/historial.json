@@ -154,5 +154,86 @@
     ],
     "n_resultados": 16,
     "ts": "2026-05-13 23:35"
+  },
+  "comunidades_pago_espana": {
+    "id": "comunidades_pago_espana",
+    "nombre": "Comunidades de pago online para profesionales espanoles",
+    "score": 37,
+    "viabilidad": "MEDIA",
+    "precio_medio_eur": 0,
+    "precios_rango": [],
+    "demanda": 14,
+    "gap_mercado": 1,
+    "competidores": [
+      "skool",
+      "patreon",
+      "substack"
+    ],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 17,
+    "ts": "2026-05-13 23:57"
+  },
+  "traduccion_localizacion": {
+    "id": "traduccion_localizacion",
+    "nombre": "Servicios de traduccion y localizacion para empresas",
+    "score": 80,
+    "viabilidad": "ALTA",
+    "precio_medio_eur": 503,
+    "precios_rango": [
+      6,
+      9,
+      10,
+      15,
+      21,
+      22,
+      25,
+      30
+    ],
+    "demanda": 132,
+    "gap_mercado": 1,
+    "competidores": [
+      "factura",
+      "wordpress"
+    ],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 16,
+    "ts": "2026-05-13 23:57"
+  },
+  "coaching_autonomos": {
+    "id": "coaching_autonomos",
+    "nombre": "Coaching y mentoría para autónomos y emprendedores",
+    "score": 74,
+    "viabilidad": "ALTA",
+    "precio_medio_eur": 93,
+    "precios_rango": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "demanda": 83,
+    "gap_mercado": 0,
+    "competidores": [
+      "factura"
+    ],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 17,
+    "ts": "2026-05-13 23:57"
   }
 }
