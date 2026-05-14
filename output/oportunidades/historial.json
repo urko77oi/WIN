@@ -85,16 +85,17 @@
   "contenido_digital_pymes": {
     "id": "contenido_digital_pymes",
     "nombre": "Servicios de contenido digital para pymes espanolas",
-    "score": 78,
+    "score": 80,
     "viabilidad": "ALTA",
-    "precio_medio_eur": 135,
+    "precio_medio_eur": 138,
     "precios_rango": [
       15,
       25,
+      150,
       200,
       300
     ],
-    "demanda": 74,
+    "demanda": 76,
     "gap_mercado": 3,
     "competidores": [
       "factura"
@@ -104,7 +105,7 @@
       ".es",
       ".io"
     ],
-    "n_resultados": 15,
+    "n_resultados": 14,
     "ts": "2026-05-14 21:16"
   },
   "consultoria_ia_pymes": {
@@ -112,19 +113,19 @@
     "nombre": "Consultoria IA para pymes y autonomos",
     "score": 100,
     "viabilidad": "ALTA",
-    "precio_medio_eur": 271,
+    "precio_medio_eur": 270,
     "precios_rango": [
       5,
       7,
       8,
       12,
+      15,
       20,
       25,
-      30,
-      130
+      30
     ],
-    "demanda": 49,
-    "gap_mercado": 27,
+    "demanda": 50,
+    "gap_mercado": 28,
     "competidores": [
       "factura",
       "zoho",
@@ -138,7 +139,7 @@
       ".es",
       ".io"
     ],
-    "n_resultados": 16,
+    "n_resultados": 18,
     "ts": "2026-05-14 21:16"
   },
   "productos_digitales_autonomos": {
@@ -146,16 +147,16 @@
     "nombre": "Productos digitales descargables para autonomos",
     "score": 85,
     "viabilidad": "ALTA",
-    "precio_medio_eur": 261,
+    "precio_medio_eur": 242,
     "precios_rango": [
+      9,
       19,
       29,
       39,
       49,
       50,
       136,
-      149,
-      199
+      149
     ],
     "demanda": 35,
     "gap_mercado": 2,
@@ -168,7 +169,7 @@
       ".es",
       ".io"
     ],
-    "n_resultados": 15,
+    "n_resultados": 16,
     "ts": "2026-05-14 21:16"
   }
 }
