@@ -1,6 +1,6 @@
 # Informe de Oportunidades de Negocio
 
-Ultima actualizacion: 2026-05-14 21:23  |  Nichos investigados: 9/10
+Ultima actualizacion: 2026-05-14 21:24  |  Nichos investigados: 10/10
 
 ---
 
@@ -15,8 +15,9 @@ Ultima actualizacion: 2026-05-14 21:23  |  Nichos investigados: 9/10
 | 5 | Comunidades de pago online para profesionales espanoles | 72/100 | ALTA | 112 EUR | .com, .es, .io |
 | 6 | Cursos online para profesionales hispanohablantes | 70/100 | ALTA | 246 EUR | .io |
 | 7 | Coaching y mentoría para autónomos y emprendedores | 67/100 | ALTA | 14 EUR | .com, .es, .io |
-| 8 | Servicios de contenido digital para pymes espanolas | 54/100 | MEDIA | 216 EUR | .com, .es, .io |
-| 9 | Herramientas SaaS para freelancers hispanohablantes | 32/100 | BAJA | 10 EUR | .com, .es, .io |
+| 8 | Tiendas online de nicho con baja competencia | 65/100 | ALTA | – | .com, .es, .io |
+| 9 | Servicios de contenido digital para pymes espanolas | 54/100 | MEDIA | 216 EUR | .com, .es, .io |
+| 10 | Herramientas SaaS para freelancers hispanohablantes | 32/100 | BAJA | 10 EUR | .com, .es, .io |
 
 ---
 
@@ -85,6 +86,15 @@ Ultima actualizacion: 2026-05-14 21:23  |  Nichos investigados: 9/10
 - **Resultados analizados:** 17
 - **Investigado:** 2026-05-14 21:23
 
+### Tiendas online de nicho con baja competencia  ·  Score 65/100  [ALTA]
+
+- **Precio de mercado:** 0 EUR
+- **Señales de demanda:** 30  |  **Gap de mercado:** 10
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** factura, a3, shopify, wix
+- **Resultados analizados:** 15
+- **Investigado:** 2026-05-14 21:24
+
 ### Servicios de contenido digital para pymes espanolas  ·  Score 54/100  [MEDIA]
 
 - **Precio de mercado:** 216 EUR (rango: 150–300 EUR)
@@ -124,4 +134,4 @@ Ultima actualizacion: 2026-05-14 21:23  |  Nichos investigados: 9/10
 
 ---
 
-*Generado automaticamente por el equipo Agente007 · 2026-05-14 21:23*
+*Generado automaticamente por el equipo Agente007 · 2026-05-14 21:24*
