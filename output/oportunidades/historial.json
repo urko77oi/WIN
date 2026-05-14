@@ -265,5 +265,27 @@
     ],
     "n_resultados": 18,
     "ts": "2026-05-14 21:30"
+  },
+  "ecommerce_nicho": {
+    "id": "ecommerce_nicho",
+    "nombre": "Tiendas online de nicho con baja competencia",
+    "score": 64,
+    "viabilidad": "MEDIA",
+    "precio_medio_eur": 0,
+    "precios_rango": [],
+    "demanda": 28,
+    "gap_mercado": 18,
+    "competidores": [
+      "factura",
+      "a3",
+      "wix"
+    ],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 18,
+    "ts": "2026-05-14 21:31"
   }
 }
