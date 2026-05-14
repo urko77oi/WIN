@@ -1,6 +1,6 @@
 # Informe de Oportunidades de Negocio
 
-Ultima actualizacion: 2026-05-14 21:17  |  Nichos investigados: 9/10
+Ultima actualizacion: 2026-05-14 21:18  |  Nichos investigados: 10/10
 
 ---
 
@@ -15,8 +15,9 @@ Ultima actualizacion: 2026-05-14 21:17  |  Nichos investigados: 9/10
 | 5 | Cursos online para profesionales hispanohablantes | 73/100 | ALTA | 204 EUR | .io |
 | 6 | Coaching y mentoría para autónomos y emprendedores | 67/100 | ALTA | 14 EUR | .com, .es, .io |
 | 7 | Servicios de traduccion y localizacion para empresas | 62/100 | MEDIA | 426 EUR | .com, .es, .io |
-| 8 | Herramientas SaaS para freelancers hispanohablantes | 34/100 | BAJA | 10 EUR | .com, .es, .io |
-| 9 | Comunidades de pago online para profesionales espanoles | 32/100 | BAJA | – | .com, .es, .io |
+| 8 | Tiendas online de nicho con baja competencia | 54/100 | MEDIA | – | .com, .es, .io |
+| 9 | Herramientas SaaS para freelancers hispanohablantes | 34/100 | BAJA | 10 EUR | .com, .es, .io |
+| 10 | Comunidades de pago online para profesionales espanoles | 32/100 | BAJA | – | .com, .es, .io |
 
 ---
 
@@ -85,6 +86,15 @@ Ultima actualizacion: 2026-05-14 21:17  |  Nichos investigados: 9/10
 - **Resultados analizados:** 16
 - **Investigado:** 2026-05-14 21:17
 
+### Tiendas online de nicho con baja competencia  ·  Score 54/100  [MEDIA]
+
+- **Precio de mercado:** 0 EUR
+- **Señales de demanda:** 17  |  **Gap de mercado:** 3
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** a3, shopify, wordpress
+- **Resultados analizados:** 15
+- **Investigado:** 2026-05-14 21:18
+
 ### Herramientas SaaS para freelancers hispanohablantes  ·  Score 34/100  [BAJA]
 
 - **Precio de mercado:** 10 EUR
@@ -124,4 +134,4 @@ Ultima actualizacion: 2026-05-14 21:17  |  Nichos investigados: 9/10
 
 ---
 
-*Generado automaticamente por el equipo Agente007 · 2026-05-14 21:17*
+*Generado automaticamente por el equipo Agente007 · 2026-05-14 21:18*
