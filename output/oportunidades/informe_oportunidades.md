@@ -1,6 +1,6 @@
 # Informe de Oportunidades de Negocio
 
-Ultima actualizacion: 2026-05-14 21:26  |  Nichos investigados: 9/10
+Ultima actualizacion: 2026-05-14 21:28  |  Nichos investigados: 10/10
 
 ---
 
@@ -17,6 +17,7 @@ Ultima actualizacion: 2026-05-14 21:26  |  Nichos investigados: 9/10
 | 7 | Software contabilidad para autonomos espana | 72/100 | ALTA | 27 EUR | .es, .io |
 | 8 | Comunidades de pago online para profesionales espanoles | 72/100 | ALTA | 112 EUR | .com, .es, .io |
 | 9 | Cursos online para profesionales hispanohablantes | 68/100 | ALTA | 246 EUR | .io |
+| 10 | Tiendas online de nicho con baja competencia | 65/100 | ALTA | – | .com, .es, .io |
 
 ---
 
@@ -103,6 +104,15 @@ Ultima actualizacion: 2026-05-14 21:26  |  Nichos investigados: 9/10
 - **Resultados analizados:** 17
 - **Investigado:** 2026-05-14 21:24
 
+### Tiendas online de nicho con baja competencia  ·  Score 65/100  [ALTA]
+
+- **Precio de mercado:** 0 EUR
+- **Señales de demanda:** 27  |  **Gap de mercado:** 10
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** factura, a3, wix
+- **Resultados analizados:** 16
+- **Investigado:** 2026-05-14 21:28
+
 ---
 
 ## Top oportunidades — Proximos pasos sugeridos
@@ -124,4 +134,4 @@ Ultima actualizacion: 2026-05-14 21:26  |  Nichos investigados: 9/10
 
 ---
 
-*Generado automaticamente por el equipo Agente007 · 2026-05-14 21:26*
+*Generado automaticamente por el equipo Agente007 · 2026-05-14 21:28*
