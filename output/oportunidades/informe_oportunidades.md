@@ -1,6 +1,6 @@
 # Informe de Oportunidades de Negocio
 
-Ultima actualizacion: 2026-05-14 21:19  |  Nichos investigados: 6/10
+Ultima actualizacion: 2026-05-14 21:20  |  Nichos investigados: 9/10
 
 ---
 
@@ -13,7 +13,10 @@ Ultima actualizacion: 2026-05-14 21:19  |  Nichos investigados: 6/10
 | 3 | Productos digitales descargables para autonomos | 83/100 | ALTA | 260 EUR | .com, .es, .io |
 | 4 | Servicios de contenido digital para pymes espanolas | 80/100 | ALTA | 138 EUR | .com, .es, .io |
 | 5 | Cursos online para profesionales hispanohablantes | 74/100 | ALTA | 222 EUR | .io |
-| 6 | Herramientas SaaS para freelancers hispanohablantes | 40/100 | MEDIA | 10 EUR | .com, .es, .io |
+| 6 | Coaching y mentoría para autónomos y emprendedores | 74/100 | ALTA | 201 EUR | .com, .es, .io |
+| 7 | Comunidades de pago online para profesionales espanoles | 63/100 | MEDIA | 39 EUR | .com, .es, .io |
+| 8 | Servicios de traduccion y localizacion para empresas | 58/100 | MEDIA | 685 EUR | .com, .es, .io |
+| 9 | Herramientas SaaS para freelancers hispanohablantes | 40/100 | MEDIA | 10 EUR | .com, .es, .io |
 
 ---
 
@@ -64,6 +67,33 @@ Ultima actualizacion: 2026-05-14 21:19  |  Nichos investigados: 6/10
 - **Resultados analizados:** 18
 - **Investigado:** 2026-05-14 21:18
 
+### Coaching y mentoría para autónomos y emprendedores  ·  Score 74/100  [ALTA]
+
+- **Precio de mercado:** 201 EUR (rango: 5–12 EUR)
+- **Señales de demanda:** 82  |  **Gap de mercado:** 0
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** factura
+- **Resultados analizados:** 17
+- **Investigado:** 2026-05-14 21:20
+
+### Comunidades de pago online para profesionales espanoles  ·  Score 63/100  [MEDIA]
+
+- **Precio de mercado:** 39 EUR (rango: 9–99 EUR)
+- **Señales de demanda:** 17  |  **Gap de mercado:** 2
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** notion, skool
+- **Resultados analizados:** 16
+- **Investigado:** 2026-05-14 21:20
+
+### Servicios de traduccion y localizacion para empresas  ·  Score 58/100  [MEDIA]
+
+- **Precio de mercado:** 685 EUR (rango: 10–2026 EUR)
+- **Señales de demanda:** 36  |  **Gap de mercado:** 0
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** no detectados
+- **Resultados analizados:** 17
+- **Investigado:** 2026-05-14 21:20
+
 ### Herramientas SaaS para freelancers hispanohablantes  ·  Score 40/100  [MEDIA]
 
 - **Precio de mercado:** 10 EUR
@@ -94,4 +124,4 @@ Ultima actualizacion: 2026-05-14 21:19  |  Nichos investigados: 6/10
 
 ---
 
-*Generado automaticamente por el equipo Agente007 · 2026-05-14 21:19*
+*Generado automaticamente por el equipo Agente007 · 2026-05-14 21:20*
