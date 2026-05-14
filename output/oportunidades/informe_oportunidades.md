@@ -1,6 +1,6 @@
 # Informe de Oportunidades de Negocio
 
-Ultima actualizacion: 2026-05-14 21:29  |  Nichos investigados: 6/10
+Ultima actualizacion: 2026-05-14 21:30  |  Nichos investigados: 9/10
 
 ---
 
@@ -11,9 +11,12 @@ Ultima actualizacion: 2026-05-14 21:29  |  Nichos investigados: 6/10
 | 1 | Consultoria IA para pymes y autonomos | 100/100 | ALTA | 257 EUR | .com, .es, .io |
 | 2 | Software contabilidad para autonomos espana | 93/100 | ALTA | 41 EUR | .es, .io |
 | 3 | Servicios de contenido digital para pymes espanolas | 88/100 | ALTA | 209 EUR | .com, .es, .io |
-| 4 | Productos digitales descargables para autonomos | 81/100 | ALTA | 191 EUR | .com, .es, .io |
-| 5 | Cursos online para profesionales hispanohablantes | 74/100 | ALTA | 222 EUR | .io |
-| 6 | Herramientas SaaS para freelancers hispanohablantes | 65/100 | ALTA | – | .com, .es, .io |
+| 4 | Coaching y mentoría para autónomos y emprendedores | 85/100 | ALTA | 343 EUR | .com, .es, .io |
+| 5 | Productos digitales descargables para autonomos | 81/100 | ALTA | 191 EUR | .com, .es, .io |
+| 6 | Servicios de traduccion y localizacion para empresas | 80/100 | ALTA | 501 EUR | .com, .es, .io |
+| 7 | Comunidades de pago online para profesionales espanoles | 75/100 | ALTA | 112 EUR | .com, .es, .io |
+| 8 | Cursos online para profesionales hispanohablantes | 74/100 | ALTA | 222 EUR | .io |
+| 9 | Herramientas SaaS para freelancers hispanohablantes | 65/100 | ALTA | – | .com, .es, .io |
 
 ---
 
@@ -46,6 +49,15 @@ Ultima actualizacion: 2026-05-14 21:29  |  Nichos investigados: 6/10
 - **Resultados analizados:** 18
 - **Investigado:** 2026-05-14 21:29
 
+### Coaching y mentoría para autónomos y emprendedores  ·  Score 85/100  [ALTA]
+
+- **Precio de mercado:** 343 EUR (rango: 5–40 EUR)
+- **Señales de demanda:** 78  |  **Gap de mercado:** 2
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** factura
+- **Resultados analizados:** 18
+- **Investigado:** 2026-05-14 21:30
+
 ### Productos digitales descargables para autonomos  ·  Score 81/100  [ALTA]
 
 - **Precio de mercado:** 191 EUR (rango: 19–703 EUR)
@@ -54,6 +66,24 @@ Ultima actualizacion: 2026-05-14 21:29  |  Nichos investigados: 6/10
 - **Competidores detectados:** factura, mailchimp, wordpress, notion, slack
 - **Resultados analizados:** 17
 - **Investigado:** 2026-05-14 21:29
+
+### Servicios de traduccion y localizacion para empresas  ·  Score 80/100  [ALTA]
+
+- **Precio de mercado:** 501 EUR (rango: 6–25 EUR)
+- **Señales de demanda:** 103  |  **Gap de mercado:** 1
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** factura
+- **Resultados analizados:** 18
+- **Investigado:** 2026-05-14 21:30
+
+### Comunidades de pago online para profesionales espanoles  ·  Score 75/100  [ALTA]
+
+- **Precio de mercado:** 112 EUR (rango: 9–297 EUR)
+- **Señales de demanda:** 16  |  **Gap de mercado:** 3
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** wordpress, notion, skool
+- **Resultados analizados:** 18
+- **Investigado:** 2026-05-14 21:30
 
 ### Cursos online para profesionales hispanohablantes  ·  Score 74/100  [ALTA]
 
@@ -94,4 +124,4 @@ Ultima actualizacion: 2026-05-14 21:29  |  Nichos investigados: 6/10
 
 ---
 
-*Generado automaticamente por el equipo Agente007 · 2026-05-14 21:29*
+*Generado automaticamente por el equipo Agente007 · 2026-05-14 21:30*
