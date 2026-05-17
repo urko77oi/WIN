@@ -172,5 +172,110 @@
     ],
     "n_resultados": 18,
     "ts": "2026-05-17 12:57"
+  },
+  "comunidades_pago_espana": {
+    "id": "comunidades_pago_espana",
+    "nombre": "Comunidades de pago online para profesionales espanoles",
+    "score": 58,
+    "viabilidad": "MEDIA",
+    "precio_medio_eur": 39,
+    "precios_rango": [
+      9,
+      10,
+      99
+    ],
+    "demanda": 15,
+    "gap_mercado": 2,
+    "competidores": [
+      "notion",
+      "skool",
+      "substack"
+    ],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 18,
+    "ts": "2026-05-17 12:57"
+  },
+  "traduccion_localizacion": {
+    "id": "traduccion_localizacion",
+    "nombre": "Servicios de traduccion y localizacion para empresas",
+    "score": 75,
+    "viabilidad": "ALTA",
+    "precio_medio_eur": 708,
+    "precios_rango": [
+      6,
+      9,
+      10,
+      25,
+      45,
+      55,
+      65,
+      75
+    ],
+    "demanda": 126,
+    "gap_mercado": 0,
+    "competidores": [
+      "wordpress"
+    ],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 18,
+    "ts": "2026-05-17 12:57"
+  },
+  "coaching_autonomos": {
+    "id": "coaching_autonomos",
+    "nombre": "Coaching y mentoría para autónomos y emprendedores",
+    "score": 100,
+    "viabilidad": "ALTA",
+    "precio_medio_eur": 359,
+    "precios_rango": [
+      6,
+      14,
+      20,
+      25,
+      30,
+      35,
+      40,
+      42
+    ],
+    "demanda": 51,
+    "gap_mercado": 5,
+    "competidores": [
+      "factura"
+    ],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 18,
+    "ts": "2026-05-17 12:57"
+  },
+  "ecommerce_nicho": {
+    "id": "ecommerce_nicho",
+    "nombre": "Tiendas online de nicho con baja competencia",
+    "score": 65,
+    "viabilidad": "ALTA",
+    "precio_medio_eur": 0,
+    "precios_rango": [],
+    "demanda": 30,
+    "gap_mercado": 16,
+    "competidores": [
+      "a3",
+      "shopify"
+    ],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 16,
+    "ts": "2026-05-17 12:58"
   }
 }
