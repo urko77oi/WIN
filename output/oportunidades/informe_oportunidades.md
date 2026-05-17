@@ -1,6 +1,6 @@
 # Informe de Oportunidades de Negocio
 
-Ultima actualizacion: 2026-05-17 12:12  |  Nichos investigados: 9/10
+Ultima actualizacion: 2026-05-17 12:12  |  Nichos investigados: 10/10
 
 ---
 
@@ -17,6 +17,7 @@ Ultima actualizacion: 2026-05-17 12:12  |  Nichos investigados: 9/10
 | 7 | Comunidades de pago online para profesionales espanoles | 78/100 | ALTA | 39 EUR | .com, .es, .io |
 | 8 | Cursos online para profesionales hispanohablantes | 69/100 | ALTA | 57 EUR | .io |
 | 9 | Herramientas SaaS para freelancers hispanohablantes | 65/100 | ALTA | – | .com, .es, .io |
+| 10 | Tiendas online de nicho con baja competencia | 58/100 | MEDIA | – | .com, .es, .io |
 
 ---
 
@@ -102,6 +103,15 @@ Ultima actualizacion: 2026-05-17 12:12  |  Nichos investigados: 9/10
 - **Competidores detectados:** factura, sage
 - **Resultados analizados:** 16
 - **Investigado:** 2026-05-17 11:50
+
+### Tiendas online de nicho con baja competencia  ·  Score 58/100  [MEDIA]
+
+- **Precio de mercado:** 0 EUR
+- **Señales de demanda:** 14  |  **Gap de mercado:** 8
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** shopify, woocommerce, wix
+- **Resultados analizados:** 16
+- **Investigado:** 2026-05-17 12:12
 
 ---
 
