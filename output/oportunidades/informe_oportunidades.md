@@ -1,6 +1,6 @@
 # Informe de Oportunidades de Negocio
 
-Ultima actualizacion: 2026-05-17 11:16  |  Nichos investigados: 6/10
+Ultima actualizacion: 2026-05-17 11:17  |  Nichos investigados: 9/10
 
 ---
 
@@ -14,6 +14,9 @@ Ultima actualizacion: 2026-05-17 11:16  |  Nichos investigados: 6/10
 | 4 | Productos digitales descargables para autonomos | 85/100 | ALTA | 261 EUR | .com, .es, .io |
 | 5 | Servicios de contenido digital para pymes espanolas | 79/100 | ALTA | 1006 EUR | .com, .es, .io |
 | 6 | Cursos online para profesionales hispanohablantes | 74/100 | ALTA | 222 EUR | .io |
+| 7 | Coaching y mentoría para autónomos y emprendedores | 67/100 | ALTA | 16 EUR | .com, .es, .io |
+| 8 | Servicios de traduccion y localizacion para empresas | 58/100 | MEDIA | 685 EUR | .com, .es, .io |
+| 9 | Comunidades de pago online para profesionales espanoles | 45/100 | MEDIA | 39 EUR | .com, .es, .io |
 
 ---
 
@@ -73,6 +76,33 @@ Ultima actualizacion: 2026-05-17 11:16  |  Nichos investigados: 6/10
 - **Resultados analizados:** 18
 - **Investigado:** 2026-05-14 21:32
 
+### Coaching y mentoría para autónomos y emprendedores  ·  Score 67/100  [ALTA]
+
+- **Precio de mercado:** 16 EUR (rango: 5–12 EUR)
+- **Señales de demanda:** 106  |  **Gap de mercado:** 0
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** factura
+- **Resultados analizados:** 17
+- **Investigado:** 2026-05-17 11:17
+
+### Servicios de traduccion y localizacion para empresas  ·  Score 58/100  [MEDIA]
+
+- **Precio de mercado:** 685 EUR (rango: 10–2026 EUR)
+- **Señales de demanda:** 57  |  **Gap de mercado:** 0
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** wordpress
+- **Resultados analizados:** 17
+- **Investigado:** 2026-05-17 11:17
+
+### Comunidades de pago online para profesionales espanoles  ·  Score 45/100  [MEDIA]
+
+- **Precio de mercado:** 39 EUR (rango: 9–99 EUR)
+- **Señales de demanda:** 11  |  **Gap de mercado:** 1
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** skool, substack
+- **Resultados analizados:** 18
+- **Investigado:** 2026-05-17 11:17
+
 ---
 
 ## Top oportunidades — Proximos pasos sugeridos
@@ -94,4 +124,4 @@ Ultima actualizacion: 2026-05-17 11:16  |  Nichos investigados: 6/10
 
 ---
 
-*Generado automaticamente por el equipo Agente007 · 2026-05-17 11:16*
+*Generado automaticamente por el equipo Agente007 · 2026-05-17 11:17*
