@@ -1,6 +1,6 @@
 # Informe de Oportunidades de Negocio
 
-Ultima actualizacion: 2026-05-17 11:21  |  Nichos investigados: 3/10
+Ultima actualizacion: 2026-05-17 11:22  |  Nichos investigados: 6/10
 
 ---
 
@@ -9,8 +9,11 @@ Ultima actualizacion: 2026-05-17 11:21  |  Nichos investigados: 3/10
 | # | Oportunidad | Score | Viabilidad | Precio medio | Dominios libres |
 |---|-------------|-------|------------|--------------|-----------------|
 | 1 | Software contabilidad para autonomos espana | 100/100 | ALTA | 59 EUR | .es, .io |
-| 2 | Herramientas SaaS para freelancers hispanohablantes | 65/100 | ALTA | – | .com, .es, .io |
-| 3 | Cursos online para profesionales hispanohablantes | 60/100 | MEDIA | 43 EUR | .io |
+| 2 | Consultoria IA para pymes y autonomos | 100/100 | ALTA | 350 EUR | .com, .es, .io |
+| 3 | Productos digitales descargables para autonomos | 85/100 | ALTA | 269 EUR | .com, .es, .io |
+| 4 | Servicios de contenido digital para pymes espanolas | 75/100 | ALTA | 554 EUR | .com, .es, .io |
+| 5 | Herramientas SaaS para freelancers hispanohablantes | 65/100 | ALTA | – | .com, .es, .io |
+| 6 | Cursos online para profesionales hispanohablantes | 60/100 | MEDIA | 43 EUR | .io |
 
 ---
 
@@ -24,6 +27,33 @@ Ultima actualizacion: 2026-05-17 11:21  |  Nichos investigados: 3/10
 - **Competidores detectados:** holded, factura, contasimple
 - **Resultados analizados:** 18
 - **Investigado:** 2026-05-17 11:21
+
+### Consultoria IA para pymes y autonomos  ·  Score 100/100  [ALTA]
+
+- **Precio de mercado:** 350 EUR (rango: 15–490 EUR)
+- **Señales de demanda:** 45  |  **Gap de mercado:** 29
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** factura
+- **Resultados analizados:** 18
+- **Investigado:** 2026-05-17 11:22
+
+### Productos digitales descargables para autonomos  ·  Score 85/100  [ALTA]
+
+- **Precio de mercado:** 269 EUR (rango: 19–99 EUR)
+- **Señales de demanda:** 45  |  **Gap de mercado:** 2
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** factura, shopify, notion, slack
+- **Resultados analizados:** 18
+- **Investigado:** 2026-05-17 11:22
+
+### Servicios de contenido digital para pymes espanolas  ·  Score 75/100  [ALTA]
+
+- **Precio de mercado:** 554 EUR (rango: 5–60 EUR)
+- **Señales de demanda:** 79  |  **Gap de mercado:** 0
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** factura
+- **Resultados analizados:** 18
+- **Investigado:** 2026-05-17 11:22
 
 ### Herramientas SaaS para freelancers hispanohablantes  ·  Score 65/100  [ALTA]
 
@@ -52,16 +82,16 @@ Ultima actualizacion: 2026-05-17 11:21  |  Nichos investigados: 3/10
 - Dominio: registrar .es
 - Accion: landing page de validacion + lista de espera
 
-**Herramientas SaaS para freelancers hispanohablantes** (score 65)
-- Precio objetivo: 0 EUR/mes o 0 EUR/hora
+**Consultoria IA para pymes y autonomos** (score 100)
+- Precio objetivo: 490 EUR/mes o 350 EUR/hora
 - Dominio: registrar .com
 - Accion: landing page de validacion + lista de espera
 
-**Cursos online para profesionales hispanohablantes** (score 60)
-- Precio objetivo: 50 EUR/mes o 43 EUR/hora
-- Dominio: registrar .io
+**Productos digitales descargables para autonomos** (score 85)
+- Precio objetivo: 99 EUR/mes o 269 EUR/hora
+- Dominio: registrar .com
 - Accion: landing page de validacion + lista de espera
 
 ---
 
-*Generado automaticamente por el equipo Agente007 · 2026-05-17 11:21*
+*Generado automaticamente por el equipo Agente007 · 2026-05-17 11:22*
