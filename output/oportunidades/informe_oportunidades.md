@@ -1,6 +1,6 @@
 # Informe de Oportunidades de Negocio
 
-Ultima actualizacion: 2026-05-17 11:26  |  Nichos investigados: 3/10
+Ultima actualizacion: 2026-05-17 11:48  |  Nichos investigados: 6/10
 
 ---
 
@@ -9,8 +9,11 @@ Ultima actualizacion: 2026-05-17 11:26  |  Nichos investigados: 3/10
 | # | Oportunidad | Score | Viabilidad | Precio medio | Dominios libres |
 |---|-------------|-------|------------|--------------|-----------------|
 | 1 | Software contabilidad para autonomos espana | 100/100 | ALTA | 59 EUR | .es, .io |
-| 2 | Cursos online para profesionales hispanohablantes | 72/100 | ALTA | 1024 EUR | .io |
-| 3 | Herramientas SaaS para freelancers hispanohablantes | 65/100 | ALTA | – | .com, .es, .io |
+| 2 | Consultoria IA para pymes y autonomos | 100/100 | ALTA | 304 EUR | .com, .es, .io |
+| 3 | Servicios de contenido digital para pymes espanolas | 86/100 | ALTA | 98 EUR | .com, .es, .io |
+| 4 | Productos digitales descargables para autonomos | 85/100 | ALTA | 261 EUR | .com, .es, .io |
+| 5 | Cursos online para profesionales hispanohablantes | 72/100 | ALTA | 1024 EUR | .io |
+| 6 | Herramientas SaaS para freelancers hispanohablantes | 65/100 | ALTA | – | .com, .es, .io |
 
 ---
 
@@ -24,6 +27,33 @@ Ultima actualizacion: 2026-05-17 11:26  |  Nichos investigados: 3/10
 - **Competidores detectados:** holded, factura, contasimple
 - **Resultados analizados:** 17
 - **Investigado:** 2026-05-17 11:26
+
+### Consultoria IA para pymes y autonomos  ·  Score 100/100  [ALTA]
+
+- **Precio de mercado:** 304 EUR (rango: 15–490 EUR)
+- **Señales de demanda:** 47  |  **Gap de mercado:** 29
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** factura
+- **Resultados analizados:** 18
+- **Investigado:** 2026-05-17 11:48
+
+### Servicios de contenido digital para pymes espanolas  ·  Score 86/100  [ALTA]
+
+- **Precio de mercado:** 98 EUR (rango: 5–400 EUR)
+- **Señales de demanda:** 91  |  **Gap de mercado:** 3
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** factura, hubspot
+- **Resultados analizados:** 18
+- **Investigado:** 2026-05-17 11:48
+
+### Productos digitales descargables para autonomos  ·  Score 85/100  [ALTA]
+
+- **Precio de mercado:** 261 EUR (rango: 19–199 EUR)
+- **Señales de demanda:** 44  |  **Gap de mercado:** 2
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** factura, shopify, notion
+- **Resultados analizados:** 18
+- **Investigado:** 2026-05-17 11:48
 
 ### Cursos online para profesionales hispanohablantes  ·  Score 72/100  [ALTA]
 
@@ -52,16 +82,16 @@ Ultima actualizacion: 2026-05-17 11:26  |  Nichos investigados: 3/10
 - Dominio: registrar .es
 - Accion: landing page de validacion + lista de espera
 
-**Cursos online para profesionales hispanohablantes** (score 72)
-- Precio objetivo: 2018 EUR/mes o 1024 EUR/hora
-- Dominio: registrar .io
+**Consultoria IA para pymes y autonomos** (score 100)
+- Precio objetivo: 490 EUR/mes o 304 EUR/hora
+- Dominio: registrar .com
 - Accion: landing page de validacion + lista de espera
 
-**Herramientas SaaS para freelancers hispanohablantes** (score 65)
-- Precio objetivo: 0 EUR/mes o 0 EUR/hora
+**Servicios de contenido digital para pymes espanolas** (score 86)
+- Precio objetivo: 400 EUR/mes o 98 EUR/hora
 - Dominio: registrar .com
 - Accion: landing page de validacion + lista de espera
 
 ---
 
-*Generado automaticamente por el equipo Agente007 · 2026-05-17 11:26*
+*Generado automaticamente por el equipo Agente007 · 2026-05-17 11:48*

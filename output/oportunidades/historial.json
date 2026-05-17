@@ -75,5 +75,95 @@
     ],
     "n_resultados": 16,
     "ts": "2026-05-17 11:26"
+  },
+  "contenido_digital_pymes": {
+    "id": "contenido_digital_pymes",
+    "nombre": "Servicios de contenido digital para pymes espanolas",
+    "score": 86,
+    "viabilidad": "ALTA",
+    "precio_medio_eur": 98,
+    "precios_rango": [
+      5,
+      15,
+      25,
+      40,
+      55,
+      100,
+      150,
+      400
+    ],
+    "demanda": 91,
+    "gap_mercado": 3,
+    "competidores": [
+      "factura",
+      "hubspot"
+    ],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 18,
+    "ts": "2026-05-17 11:48"
+  },
+  "consultoria_ia_pymes": {
+    "id": "consultoria_ia_pymes",
+    "nombre": "Consultoria IA para pymes y autonomos",
+    "score": 100,
+    "viabilidad": "ALTA",
+    "precio_medio_eur": 304,
+    "precios_rango": [
+      15,
+      25,
+      130,
+      150,
+      180,
+      300,
+      450,
+      490
+    ],
+    "demanda": 47,
+    "gap_mercado": 29,
+    "competidores": [
+      "factura"
+    ],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 18,
+    "ts": "2026-05-17 11:48"
+  },
+  "productos_digitales_autonomos": {
+    "id": "productos_digitales_autonomos",
+    "nombre": "Productos digitales descargables para autonomos",
+    "score": 85,
+    "viabilidad": "ALTA",
+    "precio_medio_eur": 261,
+    "precios_rango": [
+      19,
+      29,
+      39,
+      49,
+      50,
+      136,
+      149,
+      199
+    ],
+    "demanda": 44,
+    "gap_mercado": 2,
+    "competidores": [
+      "factura",
+      "shopify",
+      "notion"
+    ],
+    "dominios_libres": [
+      ".com",
+      ".es",
+      ".io"
+    ],
+    "n_resultados": 18,
+    "ts": "2026-05-17 11:48"
   }
 }
