@@ -1,6 +1,6 @@
 # Informe de Oportunidades de Negocio
 
-Ultima actualizacion: 2026-05-17 11:22  |  Nichos investigados: 6/10
+Ultima actualizacion: 2026-05-17 11:22  |  Nichos investigados: 9/10
 
 ---
 
@@ -10,10 +10,13 @@ Ultima actualizacion: 2026-05-17 11:22  |  Nichos investigados: 6/10
 |---|-------------|-------|------------|--------------|-----------------|
 | 1 | Software contabilidad para autonomos espana | 100/100 | ALTA | 59 EUR | .es, .io |
 | 2 | Consultoria IA para pymes y autonomos | 100/100 | ALTA | 350 EUR | .com, .es, .io |
-| 3 | Productos digitales descargables para autonomos | 85/100 | ALTA | 269 EUR | .com, .es, .io |
-| 4 | Servicios de contenido digital para pymes espanolas | 75/100 | ALTA | 554 EUR | .com, .es, .io |
-| 5 | Herramientas SaaS para freelancers hispanohablantes | 65/100 | ALTA | – | .com, .es, .io |
-| 6 | Cursos online para profesionales hispanohablantes | 60/100 | MEDIA | 43 EUR | .io |
+| 3 | Coaching y mentoría para autónomos y emprendedores | 100/100 | ALTA | 359 EUR | .com, .es, .io |
+| 4 | Productos digitales descargables para autonomos | 85/100 | ALTA | 269 EUR | .com, .es, .io |
+| 5 | Servicios de contenido digital para pymes espanolas | 75/100 | ALTA | 554 EUR | .com, .es, .io |
+| 6 | Herramientas SaaS para freelancers hispanohablantes | 65/100 | ALTA | – | .com, .es, .io |
+| 7 | Servicios de traduccion y localizacion para empresas | 61/100 | MEDIA | 426 EUR | .com, .es, .io |
+| 8 | Cursos online para profesionales hispanohablantes | 60/100 | MEDIA | 43 EUR | .io |
+| 9 | Comunidades de pago online para profesionales espanoles | 47/100 | MEDIA | 39 EUR | .com, .es, .io |
 
 ---
 
@@ -32,6 +35,15 @@ Ultima actualizacion: 2026-05-17 11:22  |  Nichos investigados: 6/10
 
 - **Precio de mercado:** 350 EUR (rango: 15–490 EUR)
 - **Señales de demanda:** 45  |  **Gap de mercado:** 29
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** factura
+- **Resultados analizados:** 18
+- **Investigado:** 2026-05-17 11:22
+
+### Coaching y mentoría para autónomos y emprendedores  ·  Score 100/100  [ALTA]
+
+- **Precio de mercado:** 359 EUR (rango: 6–42 EUR)
+- **Señales de demanda:** 54  |  **Gap de mercado:** 6
 - **Dominios disponibles:** .com, .es, .io
 - **Competidores detectados:** factura
 - **Resultados analizados:** 18
@@ -64,6 +76,15 @@ Ultima actualizacion: 2026-05-17 11:22  |  Nichos investigados: 6/10
 - **Resultados analizados:** 16
 - **Investigado:** 2026-05-17 11:21
 
+### Servicios de traduccion y localizacion para empresas  ·  Score 61/100  [MEDIA]
+
+- **Precio de mercado:** 426 EUR (rango: 10–2026 EUR)
+- **Señales de demanda:** 64  |  **Gap de mercado:** 0
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** wordpress
+- **Resultados analizados:** 17
+- **Investigado:** 2026-05-17 11:22
+
 ### Cursos online para profesionales hispanohablantes  ·  Score 60/100  [MEDIA]
 
 - **Precio de mercado:** 43 EUR (rango: 30–50 EUR)
@@ -72,6 +93,15 @@ Ultima actualizacion: 2026-05-17 11:22  |  Nichos investigados: 6/10
 - **Competidores detectados:** factura, a3, udemy, hotmart, teachable
 - **Resultados analizados:** 17
 - **Investigado:** 2026-05-17 11:21
+
+### Comunidades de pago online para profesionales espanoles  ·  Score 47/100  [MEDIA]
+
+- **Precio de mercado:** 39 EUR (rango: 9–99 EUR)
+- **Señales de demanda:** 12  |  **Gap de mercado:** 1
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** skool, substack
+- **Resultados analizados:** 18
+- **Investigado:** 2026-05-17 11:22
 
 ---
 
@@ -87,8 +117,8 @@ Ultima actualizacion: 2026-05-17 11:22  |  Nichos investigados: 6/10
 - Dominio: registrar .com
 - Accion: landing page de validacion + lista de espera
 
-**Productos digitales descargables para autonomos** (score 85)
-- Precio objetivo: 99 EUR/mes o 269 EUR/hora
+**Coaching y mentoría para autónomos y emprendedores** (score 100)
+- Precio objetivo: 42 EUR/mes o 359 EUR/hora
 - Dominio: registrar .com
 - Accion: landing page de validacion + lista de espera
 
