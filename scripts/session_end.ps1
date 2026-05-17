@@ -4,6 +4,10 @@
 $repo = "C:\Dev\Agente007"
 $fecha = Get-Date -Format "yyyy-MM-dd HH:mm"
 
+if (-not (Test-Path $repo)) {
+    Write-Output "{`"systemMessage`": `"Error: repositorio no encontrado en $repo`"}"
+    exit 1
+}
 Set-Location $repo
 
 # Comprobar si hay cambios
