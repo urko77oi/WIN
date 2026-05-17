@@ -1,6 +1,6 @@
 # Informe de Oportunidades de Negocio
 
-Ultima actualizacion: 2026-05-17 11:20  |  Nichos investigados: 9/10
+Ultima actualizacion: 2026-05-17 11:20  |  Nichos investigados: 10/10
 
 ---
 
@@ -15,8 +15,9 @@ Ultima actualizacion: 2026-05-17 11:20  |  Nichos investigados: 9/10
 | 5 | Servicios de contenido digital para pymes espanolas | 76/100 | ALTA | 259 EUR | .com, .es, .io |
 | 6 | Coaching y mentoría para autónomos y emprendedores | 67/100 | ALTA | 16 EUR | .com, .es, .io |
 | 7 | Servicios de traduccion y localizacion para empresas | 61/100 | MEDIA | 426 EUR | .com, .es, .io |
-| 8 | Cursos online para profesionales hispanohablantes | 36/100 | MEDIA | 18 EUR | .io |
-| 9 | Herramientas SaaS para freelancers hispanohablantes | 30/100 | BAJA | – | .com, .es, .io |
+| 8 | Tiendas online de nicho con baja competencia | 47/100 | MEDIA | – | .com, .es, .io |
+| 9 | Cursos online para profesionales hispanohablantes | 36/100 | MEDIA | 18 EUR | .io |
+| 10 | Herramientas SaaS para freelancers hispanohablantes | 30/100 | BAJA | – | .com, .es, .io |
 
 ---
 
@@ -83,6 +84,15 @@ Ultima actualizacion: 2026-05-17 11:20  |  Nichos investigados: 9/10
 - **Dominios disponibles:** .com, .es, .io
 - **Competidores detectados:** wordpress
 - **Resultados analizados:** 16
+- **Investigado:** 2026-05-17 11:20
+
+### Tiendas online de nicho con baja competencia  ·  Score 47/100  [MEDIA]
+
+- **Precio de mercado:** 0 EUR
+- **Señales de demanda:** 16  |  **Gap de mercado:** 2
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** a3
+- **Resultados analizados:** 13
 - **Investigado:** 2026-05-17 11:20
 
 ### Cursos online para profesionales hispanohablantes  ·  Score 36/100  [MEDIA]
