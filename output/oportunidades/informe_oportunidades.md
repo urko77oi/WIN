@@ -1,6 +1,6 @@
 # Informe de Oportunidades de Negocio
 
-Ultima actualizacion: 2026-05-17 12:35  |  Nichos investigados: 9/10
+Ultima actualizacion: 2026-05-17 12:35  |  Nichos investigados: 10/10
 
 ---
 
@@ -15,8 +15,9 @@ Ultima actualizacion: 2026-05-17 12:35  |  Nichos investigados: 9/10
 | 5 | Servicios de contenido digital para pymes espanolas | 84/100 | ALTA | 84 EUR | .com, .es, .io |
 | 6 | Servicios de traduccion y localizacion para empresas | 75/100 | ALTA | 708 EUR | .com, .es, .io |
 | 7 | Herramientas SaaS para freelancers hispanohablantes | 65/100 | ALTA | – | .com, .es, .io |
-| 8 | Cursos online para profesionales hispanohablantes | 60/100 | MEDIA | 43 EUR | .io |
-| 9 | Comunidades de pago online para profesionales espanoles | 49/100 | MEDIA | 39 EUR | .com, .es, .io |
+| 8 | Tiendas online de nicho con baja competencia | 65/100 | ALTA | – | .com, .es, .io |
+| 9 | Cursos online para profesionales hispanohablantes | 60/100 | MEDIA | 43 EUR | .io |
+| 10 | Comunidades de pago online para profesionales espanoles | 49/100 | MEDIA | 39 EUR | .com, .es, .io |
 
 ---
 
@@ -84,6 +85,15 @@ Ultima actualizacion: 2026-05-17 12:35  |  Nichos investigados: 9/10
 - **Competidores detectados:** factura, sage, zoho, hubspot
 - **Resultados analizados:** 18
 - **Investigado:** 2026-05-17 12:13
+
+### Tiendas online de nicho con baja competencia  ·  Score 65/100  [ALTA]
+
+- **Precio de mercado:** 0 EUR
+- **Señales de demanda:** 29  |  **Gap de mercado:** 18
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** a3, shopify
+- **Resultados analizados:** 16
+- **Investigado:** 2026-05-17 12:35
 
 ### Cursos online para profesionales hispanohablantes  ·  Score 60/100  [MEDIA]
 
