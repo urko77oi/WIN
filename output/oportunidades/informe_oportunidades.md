@@ -1,6 +1,6 @@
 # Informe de Oportunidades de Negocio
 
-Ultima actualizacion: 2026-05-17 11:17  |  Nichos investigados: 9/10
+Ultima actualizacion: 2026-05-17 11:18  |  Nichos investigados: 10/10
 
 ---
 
@@ -15,8 +15,9 @@ Ultima actualizacion: 2026-05-17 11:17  |  Nichos investigados: 9/10
 | 5 | Servicios de contenido digital para pymes espanolas | 79/100 | ALTA | 1006 EUR | .com, .es, .io |
 | 6 | Cursos online para profesionales hispanohablantes | 74/100 | ALTA | 222 EUR | .io |
 | 7 | Coaching y mentoría para autónomos y emprendedores | 67/100 | ALTA | 16 EUR | .com, .es, .io |
-| 8 | Servicios de traduccion y localizacion para empresas | 58/100 | MEDIA | 685 EUR | .com, .es, .io |
-| 9 | Comunidades de pago online para profesionales espanoles | 45/100 | MEDIA | 39 EUR | .com, .es, .io |
+| 8 | Tiendas online de nicho con baja competencia | 64/100 | MEDIA | – | .com, .es, .io |
+| 9 | Servicios de traduccion y localizacion para empresas | 58/100 | MEDIA | 685 EUR | .com, .es, .io |
+| 10 | Comunidades de pago online para profesionales espanoles | 45/100 | MEDIA | 39 EUR | .com, .es, .io |
 
 ---
 
@@ -85,6 +86,15 @@ Ultima actualizacion: 2026-05-17 11:17  |  Nichos investigados: 9/10
 - **Resultados analizados:** 17
 - **Investigado:** 2026-05-17 11:17
 
+### Tiendas online de nicho con baja competencia  ·  Score 64/100  [MEDIA]
+
+- **Precio de mercado:** 0 EUR
+- **Señales de demanda:** 17  |  **Gap de mercado:** 5
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** a3
+- **Resultados analizados:** 16
+- **Investigado:** 2026-05-17 11:18
+
 ### Servicios de traduccion y localizacion para empresas  ·  Score 58/100  [MEDIA]
 
 - **Precio de mercado:** 685 EUR (rango: 10–2026 EUR)
@@ -124,4 +134,4 @@ Ultima actualizacion: 2026-05-17 11:17  |  Nichos investigados: 9/10
 
 ---
 
-*Generado automaticamente por el equipo Agente007 · 2026-05-17 11:17*
+*Generado automaticamente por el equipo Agente007 · 2026-05-17 11:18*
