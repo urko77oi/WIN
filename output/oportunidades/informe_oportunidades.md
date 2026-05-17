@@ -1,6 +1,6 @@
 # Informe de Oportunidades de Negocio
 
-Ultima actualizacion: 2026-05-17 11:22  |  Nichos investigados: 9/10
+Ultima actualizacion: 2026-05-17 11:23  |  Nichos investigados: 10/10
 
 ---
 
@@ -16,7 +16,8 @@ Ultima actualizacion: 2026-05-17 11:22  |  Nichos investigados: 9/10
 | 6 | Herramientas SaaS para freelancers hispanohablantes | 65/100 | ALTA | – | .com, .es, .io |
 | 7 | Servicios de traduccion y localizacion para empresas | 61/100 | MEDIA | 426 EUR | .com, .es, .io |
 | 8 | Cursos online para profesionales hispanohablantes | 60/100 | MEDIA | 43 EUR | .io |
-| 9 | Comunidades de pago online para profesionales espanoles | 47/100 | MEDIA | 39 EUR | .com, .es, .io |
+| 9 | Tiendas online de nicho con baja competencia | 60/100 | MEDIA | – | .com, .es, .io |
+| 10 | Comunidades de pago online para profesionales espanoles | 47/100 | MEDIA | 39 EUR | .com, .es, .io |
 
 ---
 
@@ -94,6 +95,15 @@ Ultima actualizacion: 2026-05-17 11:22  |  Nichos investigados: 9/10
 - **Resultados analizados:** 17
 - **Investigado:** 2026-05-17 11:21
 
+### Tiendas online de nicho con baja competencia  ·  Score 60/100  [MEDIA]
+
+- **Precio de mercado:** 0 EUR
+- **Señales de demanda:** 15  |  **Gap de mercado:** 5
+- **Dominios disponibles:** .com, .es, .io
+- **Competidores detectados:** a3
+- **Resultados analizados:** 14
+- **Investigado:** 2026-05-17 11:23
+
 ### Comunidades de pago online para profesionales espanoles  ·  Score 47/100  [MEDIA]
 
 - **Precio de mercado:** 39 EUR (rango: 9–99 EUR)
@@ -124,4 +134,4 @@ Ultima actualizacion: 2026-05-17 11:22  |  Nichos investigados: 9/10
 
 ---
 
-*Generado automaticamente por el equipo Agente007 · 2026-05-17 11:22*
+*Generado automaticamente por el equipo Agente007 · 2026-05-17 11:23*
